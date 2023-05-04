@@ -1,3 +1,14 @@
+body {
+    background-color: lightgrey;
+}
+
+.background-image {
+    background-image: url("images/DSCN0110.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /* Heading */
 @media (min-width: 768px) {
