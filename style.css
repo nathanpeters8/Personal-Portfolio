@@ -1,7 +1,40 @@
 
 /* Heading */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .heading {
         text-align: center;
     }
+}
+
+/* Projects */
+@media (max-width: 899px) {
+    .project h5 {
+        font-size: 1rem;
+    }
+
+    .project p {
+        font-size: 15px;
+    }
+
+    #projects h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .project h5 {
+        font-size: 14px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+
+    #projects h3 {
+        font-size: 1.2rem;
+    }
+}
+
+#projects h3 {
+    font-weight: 600;
 }
