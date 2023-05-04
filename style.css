@@ -1,0 +1,7 @@
+
+/* Heading */
+@media (min-width: 767px) {
+    .heading {
+        text-align: center;
+    }
+}
