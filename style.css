@@ -1,3 +1,4 @@
+/* Body and Background Image */
 body {
     background-color: lightgrey;
 }
@@ -7,7 +8,29 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
 }
+
+/* @media (max-width: 899px) {
+    .lg-background-image {
+        background-image: none;
+        background-color: lightgray;
+    }
+
+    .sm-background-color {
+        background-color: black;
+        opacity: 75%;
+        color: white;
+    }
+
+    .sm-background-image {
+        background-image: url("images/DSCN0110.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+} */
+
 
 
 /* Heading */
@@ -19,11 +42,11 @@ body {
 
 /* Projects */
 @media (max-width: 899px) {
-    .project h5 {
+    .project-content-content h5 {
         font-size: 1rem;
     }
 
-    .project p {
+    .project-content p {
         font-size: 15px;
     }
 
@@ -33,11 +56,11 @@ body {
 }
 
 @media (max-width: 767px) {
-    .project h5 {
+    .project-content h5 {
         font-size: 14px;
     }
 
-    .project p {
+    .project-content p {
         font-size: 14px;
     }
 
@@ -48,4 +71,8 @@ body {
 
 #projects h3 {
     font-weight: 600;
+}
+
+.projects-background{
+    background-color: darkgrey;
 }
