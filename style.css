@@ -47,6 +47,40 @@ body {
   }
 }
 
+/* Skills */
+@media (max-width: 899px) {
+  .skills li {
+    font-size: 0.9rem;
+  }
+
+  .skills h2 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Education & Experience */
+@media (max-width: 899px) {
+  .education h2,
+  .experience h2 {
+    font-size: 1.4rem;
+  }
+
+  .education h4,
+  .experience h4 {
+    font-size: 1.3rem;
+  }
+  .education h5,
+  .experience h5 {
+    font-size: 1rem;
+  }
+  .education p,
+  .experience p {
+    font-size: 0.9rem;
+  }
+}
+
+
 /* Projects */
 @media (max-width: 899px) {
   .project-content-content h5 {
