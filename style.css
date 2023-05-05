@@ -1,78 +1,81 @@
 /* Body and Background Image */
 body {
-    background-color: lightgrey;
+  background-color: rgb(33, 37, 41);
 }
 
 .background-image {
+  background-image: url("images/DSCN0110.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+@media (max-width: 899px) {
+  .background-image {
+    background-image: none;
+  }
+
+  .sm-background-color {
+    background-color: rgba(33, 37, 41, .75);
+  }
+
+  .sm-background-image {
     background-image: url("images/DSCN0110.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+  }
 }
 
-/* @media (max-width: 899px) {
-    .lg-background-image {
-        background-image: none;
-        background-color: lightgray;
-    }
+@media (min-width: 900px) {
 
-    .sm-background-color {
-        background-color: black;
-        opacity: 75%;
-        color: white;
-    }
-
-    .sm-background-image {
-        background-image: url("images/DSCN0110.JPG");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-} */
-
-
+}
 
 /* Heading */
 @media (min-width: 768px) {
-    .heading {
-        text-align: center;
-    }
+  .heading {
+    text-align: center;
+  }
 }
 
 /* Projects */
 @media (max-width: 899px) {
-    .project-content-content h5 {
-        font-size: 1rem;
-    }
+  .project-content-content h5 {
+    font-size: 1rem;
+  }
 
-    .project-content p {
-        font-size: 15px;
-    }
+  .project-content p {
+    font-size: 15px;
+  }
 
-    #projects h3 {
-        font-size: 1.3rem;
-    }
+  #projects h3 {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 767px) {
-    .project-content h5 {
-        font-size: 14px;
-    }
+  .project-content h5 {
+    font-size: 14px;
+  }
 
-    .project-content p {
-        font-size: 14px;
-    }
+  .project-content p {
+    font-size: 14px;
+  }
 
-    #projects h3 {
-        font-size: 1.2rem;
-    }
+  #projects h3 {
+    font-size: 1.2rem;
+  }
 }
 
 #projects h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-.projects-background{
-    background-color: darkgrey;
+.projects-background {
+  background-color: gray;
+}
+
+#projects {
+    color: black;
 }
