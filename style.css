@@ -28,8 +28,16 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+/* Aspect Ratio Box */
+.aspectRatioBox {
+  padding-top: calc(2/3 * 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.left {
+  background-position: left;
 }
 
 /* Heading */
