@@ -22,17 +22,17 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <div class="background-image mb-5">
+    <div class="background-image rounded-3">
       <div class="container-xxl text-bg-dark bg-opacity-75">
-        <div class="sm-background-image">
+        <div class="sm-background-image rounded-3">
           <div class="sm-background-color">
             <nav class="navbar navbar-expand">
               <!-- <div class="container-xxl"> -->
-              <div class="container-xxl" id="navbarContent">
+              <div class="container-xxl justify-content-end" id="navbarContent">
                 <ul class="navbar-nav">
                   <li class="nav-item p-2"><a href="#" class="nav-link text-light">Home</a></li>
                   <li class="nav-item p-2"><a href="#about" class="nav-link text-light">About</a></li>
-                  <li class="nav-item p-2"><a href="#" class="nav-link text-light">Projects</a></li>
+                  <li class="nav-item p-2"><a href="#projects" class="nav-link text-light">Projects</a></li>
                   <li class="nav-item p-2"><a href="#" class="nav-link text-light">Contact</a></li>
                 </ul>
               </div>
@@ -57,7 +57,7 @@
               </div>
             </div>
             <!-- About Me -->
-            <div class="about container-xxl my-5">
+            <div class="about container-xxl mt-5">
               <div class="row">
                 <!-- Heading -->
                 <div class="col-12">
@@ -68,47 +68,55 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container-xxl my-5">
+          </div> <!--sm-background-color-->
+        </div> <!--sm-background-image-->
+        <div class="resume container-xxl mb-5 rounded-3">
           <div class="row">
             <!-- Skills -->
-            <div class="col-12 my-4">
-              <div class="skills">
+            <div class="col-12 ">
+              <div class="skills pt-5">
                 <h2>Skills</h2>
                 <hr>
                 <div class="row">
-                  <ul class="col-6 col-md-3 list-unstyled list-group-horizontal">
-                    <li class="fw-semibold text-decoration-underline mb-2">Languages</li>
-                    <li>Python <small>(5 years)</small></li>
-                    <li>C# <small>(4 years)</small></li>
-                    <li>Java <small>(3 years)</small></li>
-                    <li>JavaScript <small>(2 years)</small></li>
-                    <li>Lua <small>(2 years)</small></li>
-                  </ul>
-                  <ul class="col-6 col-md-3 list-unstyled">
-                    <li class="fw-semibold text-decoration-underline mb-2">Web Development</li>
-                    <li>HTML <small>(1 year)</small></li>
-                    <li>CSS <small>(1 year)</small></li>
-                    <li>Bootstrap <small>(< 1 year)</small></li>
-                    <li>React <small>(soon)</small></li>
-                    <li>Ruby <small>(soon)</small></li>
-                  </ul>
-                  <ul class="col-6 col-md-3 list-unstyled">
-                    <li class="fw-semibold text-decoration-underline mb-2">Game Engines</li>
-                    <li>Unity <small>(4 years)</small></li>
-                    <li>Roblox Studio <small>(2 years)</small></li>
-                    <li>Pygame <small>(2 years)</small></li>
-                    <li>Minecraft Forge <small>(2 years)</small></li>
-                    <li>Unreal <small>(1 year)</small></li>
-                  </ul>
-                  <ul class="col-6 col-md-3 list-unstyled">
-                    <li class="fw-semibold text-decoration-underline mb-2">Data Science</li>
-                    <li>Pandas <small>(2 years)</small></li>
-                    <li>NumPy <small>(2 years)</small></li>
-                    <li>Matplotlib <small>(2 years)</small></li>
-                    <li>SciPy <small>(2 years)</small></li>
-                  </ul>
+                  <div class="col-6 col-md-3 d-flex flex-column">
+                    <ul class="list-unstyled">
+                      <li class="fw-semibold text-decoration-underline mb-2">Languages</li>
+                      <li>Python <small>(5 years)</small></li>
+                      <li>C# <small>(4 years)</small></li>
+                      <li>Java <small>(3 years)</small></li>
+                      <li>JavaScript <small>(2 years)</small></li>
+                      <li>Lua <small>(2 years)</small></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-3 d-flex flex-column">
+                    <ul class="list-unstyled">
+                      <li class="fw-semibold text-decoration-underline mb-2">Web Development</li>
+                      <li>HTML <small>(1 year)</small></li>
+                      <li>CSS <small>(1 year)</small></li>
+                      <li>Bootstrap <small>(< 1 year)</small></li>
+                      <li>React <small>(soon)</small></li>
+                      <li>Ruby <small>(soon)</small></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-3 d-flex flex-column">
+                    <ul class="list-unstyled">
+                      <li class="fw-semibold text-decoration-underline mb-2">Game Engines</li>
+                      <li>Unity <small>(4 years)</small></li>
+                      <li>Roblox <small>(2 years)</small></li>
+                      <li>Pygame <small>(2 years)</small></li>
+                      <li>Minecraft <small>(2 years)</small></li>
+                      <li>Unreal <small>(1 year)</small></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-3 d-flex flex-column">
+                    <ul class="list-unstyled">
+                      <li class="fw-semibold text-decoration-underline mb-2">Data Science</li>
+                      <li>Pandas <small>(2 years)</small></li>
+                      <li>NumPy <small>(2 years)</small></li>
+                      <li>Matplotlib <small>(2 years)</small></li>
+                      <li>SciPy <small>(2 years)</small></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,9 +155,10 @@
     </div>
 
     <!-- Projects -->
-    <div class="container-xxl" id="projects">
-      <h1 class="pb-2 text-light">Projects</h1>
-      <div class="projects-background pt-2 pb-1 px-4 mb-5">
+    <div class="projects-background container-xxl rounded-3" id="projects">
+      <div class="pt-2 pb-1 px-md-2 mb-5">
+        <h1 class="pb-2 text-light mb-5">Projects</h1>
+        <!-- Web Dev Projects -->
         <h3 class="my-4 border-bottom border-dark pb-2">Web Development</h3>
         <div class="row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5">
           <div class="col-5">
@@ -187,7 +196,8 @@
           </div>
         </div>  
       </div>
-      <div class="projects-background pt-2 pb-1 px-4 mb-5">
+      <!-- Game Dev Projects -->
+      <div class="pt-2 pb-1 px-md-2 mb-5">
         <h3 class="my-4 border-bottom border-dark pb-2">Game Development</h3>
         <div class="row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5">
           <div class="col-5">
@@ -222,7 +232,8 @@
           </div>
         </div>  
       </div>
-      <div class="projects-background pt-2 pb-1 px-4 mb-5">
+      <!-- Data Science Projects -->
+      <div class="pt-2 pb-1 px-md-2 mb-5">
         <h3 class="my-4 border-bottom border-dark pb-2">Data Science</h3>
         <div class="row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5">
           <div class="col-5">

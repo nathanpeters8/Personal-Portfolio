@@ -26,6 +26,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .resume {
+    background: linear-gradient(grey,#212529);
+  }
 }
 
 /* Aspect Ratio Box */
@@ -34,6 +38,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .left {
@@ -50,7 +55,7 @@ body {
 /* Skills */
 @media (max-width: 899px) {
   .skills li {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .skills h2 {
@@ -58,6 +63,17 @@ body {
   }
 }
 
+@media (min-width: 900px) {
+  .skills li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills li {
+    font-size: 0.9rem;
+  }
+}
 
 /* Education & Experience */
 @media (max-width: 899px) {
@@ -115,9 +131,10 @@ body {
 }
 
 .projects-background {
-  background-color: gray;
+  /* background-color: gray; */
+  background: linear-gradient(#212529, grey);
 }
 
 #projects {
-    color: black;
+    color: white;
 }
