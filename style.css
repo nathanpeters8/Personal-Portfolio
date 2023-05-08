@@ -1,6 +1,7 @@
 /* Body and Background Image */
 body {
   background-color: rgb(33, 37, 41);
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .background-image {
@@ -25,10 +26,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  .resume {
-    background: linear-gradient(grey,#212529);
   }
 }
 
@@ -72,6 +69,12 @@ body {
 
 
 /* Skills */
+@media (min-width: 900px) {
+  .skills li {
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 899px) {
   .skills li {
     font-size: 1rem;
@@ -80,11 +83,9 @@ body {
   .skills h2 {
     font-size: 1.4rem;
   }
-}
 
-@media (min-width: 900px) {
-  .skills li {
-    font-size: 1.05rem;
+  .resume {
+    background: linear-gradient(grey,#212529);
   }
 }
 
@@ -117,36 +118,42 @@ body {
 
 
 /* Projects */
+@media (min-width: 900px){
+  .project-content h6 {
+    font-size: 1.2rem;
+  }
+
+  #projects h4 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 899px) {
-  .project-content-content h5 {
-    font-size: 1rem;
+  .project-content h6 {
+    font-size: 1.1rem;
   }
 
   .project-content p {
     font-size: 15px;
   }
 
-  #projects h3 {
-    font-size: 1.3rem;
+  #projects h4 {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 767px) {
-  .project-content h5 {
-    font-size: 14px;
+  .project-content h6 {
+    font-size: 1rem;
   }
 
   .project-content p {
     font-size: 14px;
   }
 
-  #projects h3 {
+  #projects h4 {
     font-size: 1.2rem;
   }
-}
-
-#projects h3 {
-  font-weight: 600;
 }
 
 .projects-background {
@@ -158,11 +165,11 @@ body {
     color: white;
 }
 
-.project-content h5 {
+.project-content h6 {
   text-overflow: ellipsis;
 }
 
-.project-content h5:hover{
+.project-content h6:hover{
   /* color:rgb(200, 200, 200); */
   transform: translateY(-2px);
   transition: 0.2s linear;
