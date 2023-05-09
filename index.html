@@ -26,29 +26,41 @@
       <div class="container-xxl text-bg-dark bg-opacity-75">
         <div class="sm-background-image rounded-3">
           <div class="sm-background-color">
-            <nav class="navbar navbar-expand">
-              <div class="container-xxl justify-content-end" id="navbarContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item p-2"><a href="#" class="nav-link text-light">Home</a></li>
-                  <li class="nav-item p-2"><a href="#about" class="nav-link text-light">About</a></li>
-                  <li class="nav-item p-2"><a href="#projects" class="nav-link text-light">Projects</a></li>
-                  <li class="nav-item p-2"><a href="#" class="nav-link text-light">Contact</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-sm navbar-light">
+              <div class="container-xxl" id="navbarContent">
+                <button 
+                  class="navbar-toggler ps-1 "
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarContent"
+                  aria-controls="navbarContent"
+                  aria-expanded="false"
+                >
+                  <span><i class="fa-solid fa-bars fa-xl text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-sm-end" id="navbarContent">
+                  <ul class="navbar-nav">
+                    <!-- <li class="nav-item pt-1 p-sm-2"><a href="#" class="nav-link text-light">Home</a></li> -->
+                    <li class="nav-item pt-1 p-sm-2"><a href="#about" class="nav-link text-light">About</a></li>
+                    <li class="nav-item pt-1 p-sm-2"><a href="#skills" class="nav-link text-light">Skills</a></li>
+                    <li class="nav-item pt-1 p-sm-2"><a href="#projects" class="nav-link text-light">Projects</a></li>
+                  </ul>
+                </div>
               </div>
             </nav>
             <!-- Heading text, image, site links -->
             <div class="container-xxl mt-3">
               <div class="row pb-2">
-                <div class="col-12 d-flex flex-column align-items-md-center">
+                <div class="col-12 d-flex flex-column align-items-md-center flex-wrap">
                   <div class="heading pb-2">
-                    <h1 class="">Nathan Peters</h1>
+                    <h1 class="display-4">Nathan Peters</h1>
                   </div>
                 </div>
-                <div class="col-12 ps-0 mt-2 d-flex flex-row justify-content-start justify-content-md-center">
+                <div class="col-12 ps-0 mt-2 d-flex flex-column flex-sm-row flex-nowrap justify-content-start justify-content-md-center">
                   <div class="site-links h5">
                     <a target="_blank" href="https://www.linkedin.com/in/nathan-peters8/" class="text-light px-3 py-1"><i class="fab fa-linkedin fa-xl"></i></a>
-                    <a target="_blank" href="https://github.com/nathanpeters8" class="text-light pe-3 py-1"><i class="fab fa-github fa-xl"></i></a>
-                    <a target="_blank" href="https://www.hackerrank.com/peters_nate8" class="text-light pe-3 py-1"><i class="fab fa-hackerrank fa-xl"></i></a>
+                    <a target="_blank" href="https://github.com/nathanpeters8" class="text-light px-3 py-1"><i class="fab fa-github fa-xl"></i></a>
+                    <a target="_blank" href="https://www.hackerrank.com/peters_nate8" class="text-light px-3 py-1"><i class="fab fa-hackerrank fa-xl"></i></a>
                   </div>
                 </div>
                 <hr class="my-3">
@@ -77,7 +89,7 @@
           <div class="row">
             <!-- Skills -->
             <div class="col-12 ">
-              <div class="skills py-5">
+              <div class="py-5" id="skills">
                 <h2 class="fw-bold fs-2 d-flex justify-content-md-center">Skills</h2>
                 <hr>
                 <div class="row">
@@ -167,7 +179,7 @@
         <hr class="mb-5 pb-4">
         <!-- Web Dev Projects -->
         <h4 class="my-4 pb-2 pb-md-3 text-decoration-underline d-flex justify-content-md-center">Web Development</h4>
-        <div class="row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5">
+        <div class="row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5 flex-row-reverse">
           <div class="col-5">
             <div class="project-content">
               <a target="_blank" href="https://nate-apple-clone.netlify.app/" class="text-light text-decoration-none">
@@ -178,13 +190,13 @@
                 <a target="_blank" href="https://nate-apple-clone.netlify.app/" class="text-light"><i class="fa-solid fa-globe fa-lg"></i></a>
                 <a target="_blank" href="https://github.com/nathanpeters8" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">HTML</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">CSS</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">HTML</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">CSS</h6></li>
                 </ul>           
               </div>
-              <p class="lh-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic reiciendis cupiditate, minus omnis nisi quas odio iste inventore expedita natus rerum sit odit, perspiciatis in quod. Aspernatur voluptatem aut culpa.</p>
+              <p class="lh-sm text-center">Static webpage that clones Apple's Homepage. Used to practice with HTML and CSS.</p>
             </div>
           </div>
           <div class="col-5">
@@ -197,14 +209,14 @@
                 <a target="_blank" href="https://nate-newsweek-clone.netlify.app/" class="text-light"><i class="fa-solid fa-globe fa-lg"></i></a>
                 <a target="_blank" href="https://github.com/nathanpeters8" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">HTML</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">CSS</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Bootstrap 3</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">HTML</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">CSS</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Bootstrap 3</h6></li>
                 </ul>           
               </div>
-              <p class="lh-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic reiciendis cupiditate, minus omnis nisi quas odio iste inventore expedita natus rerum sit odit, perspiciatis in quod. Aspernatur voluptatem aut culpa.</p>
+              <p class="lh-sm text-center">Static webpage that clones Newsweek's Homepage. Used to practice incorporating the Bootstrap 3 framework into a webpage.</p>
             </div>
           </div>
           <div class="col-5 aligns-self-start">
@@ -217,14 +229,14 @@
                 <a target="_blank" href="https://nate-airbnb-news-clone.netlify.app/" class="text-light"><i class="fa-solid fa-globe fa-lg"></i></a>
                 <a target="_blank" href="https://github.com/nathanpeters8" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">HTML</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">CSS</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Bootstrap 5</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">HTML</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">CSS</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Bootstrap 4</h6></li>
                 </ul>           
               </div>
-              <p class="lh-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic reiciendis cupiditate, minus omnis nisi quas odio iste inventore expedita natus rerum sit odit, perspiciatis in quod. Aspernatur voluptatem aut culpa.</p>
+              <p class="lh-sm text-center">Static webpage that clones the Airbnb News web page. Used to practice transitioning from Bootstrap 3 to Bootstrap 4.</p>
             </div>
           </div>
         </div>  
@@ -242,11 +254,11 @@
               <!-- <h5 class="mt-2">
                 <a target="_blank" href="https://github.com/nathanpeters8/Avalanche-Runner-Build" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Unity</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">C#</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Blender</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Unity</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">C#</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Blender</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">3D snowboard-themed endless runner video game. Compete for the highest score by collecting coins and avoiding barriers as long as possible. Includes randomized environment and coin generation, as well as a leaderboard that displays the top 10 best scores. </p>
@@ -261,11 +273,11 @@
               <!-- <h5 class="mt-2">
                 <a target="_blank" href="https://github.com/nathanpeters8/Quest-For-Functions-Build" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Unity</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">C#</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Aesprite</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Unity</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">C#</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Aesprite</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">Five person senior year capstone project. The game aims to teach the player fundamental concepts of programming. The player collects notes in different sections of the world with information about basic programming concepts and answers questions regarding the concepts.</p>
@@ -280,11 +292,11 @@
               <!-- <h5 class="mt-2">
                 <a href="#" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Unity</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">C#</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Blender</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Unity</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">C#</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Blender</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">VR Hot Dog Stand Simulator. Objective is to prepare hot dogs to match a given customer's order. Orders are randomized between different variations of hot dogs including or not including ketchup and/or mustard. A scoreboard keeps track of the number of correct orders and wrong orders.</p>
@@ -293,7 +305,7 @@
         </div>  
       </div>
       <!-- Data Science Projects -->
-      <div class="pt-2 pb-1 mb-4">
+      <div class="pt-2 pb-1">
         <h4 class="my-4 pb-2 pb-md-3 text-decoration-underline d-flex justify-content-md-center">Data Science</h4>
         <div class="row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5">
           <div class="col-5">
@@ -305,13 +317,13 @@
               <!-- <h5 class="mt-2">
                 <a target="_blank" href="https://github.com/nathanpeters8/Airplane-Crashes-Fatalities-From-1908-to-2009" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Python</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">numpy</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">matplotlib</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">scipy</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Python</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">numpy</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">matplotlib</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">scipy</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">Python module that takes airplane crash data from a CSV file, turns the data into dataframes using pandas, plots the data on a graph using matplotlib, and fits linear and nonlinear regression models to the graphs using scipy.</p>
@@ -326,13 +338,13 @@
               <!-- <h5 class="mt-2">
                 <a target="_blank" href="https://github.com/nathanpeters8/Book-Recommender-System" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Python</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">numpy</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">sqlite3</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">random</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Python</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">numpy</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">sqlite3</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">random</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">Takes a database with books and customer names, and recommends books based on the book and a customer's purchase history. Uses item-based collaborative filtering.</p>
@@ -347,13 +359,13 @@
               <!-- <h5 class="mt-2">
                 <a target="_blank" href="https://github.com/nathanpeters8/Classification-of-Handwritten-Digits" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->              
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Python</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">matplotlib</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">scikit-learn</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">scipy</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Python</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">matplotlib</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">scikit-learn</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">scipy</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">Classifies 70,000 digitized handwritten digits from the MNIST dataset using a linear SVM classifier implemented with SGD learning (SGDClassifier) and a softmax regression classifier (LogisticRegression).</p>
@@ -368,13 +380,13 @@
               <!-- <h5 class="mt-2">
                 <a target="_blank" href="https://github.com/nathanpeters8/Similarities-Between-Text-Files" class="text-light"><i class="fab fa-github fa-xl"></i></a>
               </h5> -->
-              <div class="softwares">
+              <div id="softwares">
                 <ul class="list-group list-unstyled list-group-horizontal justify-content-center flex-wrap">
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">Python</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">numpy</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">scikit-learn</h6></li>
-                  <li><h6 class="fs-6 mx-1 list-group-item rounded-2 p-1">nltk</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">Python</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">pandas</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">numpy</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">scikit-learn</h6></li>
+                  <li><h6 class="mx-1 list-group-item rounded-2 p-1">nltk</h6></li>
                 </ul>           
               </div>
               <p class="lh-sm text-center">Creates a matrix of similarities between contents of text files using the cosine similarity formula.</p>
