@@ -132,6 +132,11 @@ body {
   }
 }
 
+.education h5:hover,
+.experience h5:hover {
+  transform: translate(0, -1px);
+  text-decoration: underline;
+}
 
 /* Projects */
 @media (min-width: 900px){
@@ -201,4 +206,15 @@ body {
   /* color:rgb(200, 200, 200); */
   transform: translateY(-2px);
   transition: 0.2s linear;
+}
+
+
+/* Footer */
+footer a {
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  transform: translate(0, -1px);
+  text-decoration: underline !important;
 }
