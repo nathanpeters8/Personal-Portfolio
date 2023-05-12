@@ -30,6 +30,16 @@ body {
 }
 
 /* Aspect Ratio Box */
+/* @media (max-width: 767px){
+  .aspectRatioBox {
+    padding-top: calc(3/7 * 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+} */
+
 .aspectRatioBox {
   padding-top: calc(2/3 * 100%);
   background-size: cover;
