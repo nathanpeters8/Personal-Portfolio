@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './style.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -9,6 +10,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import NavBar from './pages/NavBar';
 import Heading from './pages/Heading';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
 
 library.add(faLinkedin, faGithub, faHackerrank, faLaptopCode, faLocationDot, faEnvelope);
 
@@ -23,8 +26,10 @@ function App() {
               <Heading />
             </div>
           </div>
+          <Resume />
         </div>
       </div>
+      <Projects />
     </BrowserRouter>
   );
 }
