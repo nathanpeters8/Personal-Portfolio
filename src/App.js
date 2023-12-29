@@ -18,10 +18,10 @@ library.add(faLinkedin, faGithub, faHackerrank, faLaptopCode, faLocationDot, faE
 function App() {
   return (
     <BrowserRouter>
-      <div className="background-image rounded-3">
-        <div className="container-xxl text-bg-dark bg-opacity-75">
-          <div className="sm-background-image rounded-3">
-            <div className="sm-background-color">
+      <div className='background-image rounded-3'>
+        <div className='container-xxl text-bg-dark bg-opacity-75'>
+          <div className='sm-background-image rounded-3'>
+            <div className='sm-background-color'>
               <NavBar />
               <Heading />
             </div>
@@ -29,7 +29,14 @@ function App() {
           <Resume />
         </div>
       </div>
-      <Projects />
+      <div className='projects-background container-xxl rounded-3 pt-5' id='projects'>
+        <Projects />
+        <footer>
+          <a href='https://www.altcademy.com/' className='text-white d-flex pb-2 text-decoration-none'>
+            Part of Altcademy's Full Stack Program
+          </a>
+        </footer>
+      </div>
     </BrowserRouter>
   );
 }
