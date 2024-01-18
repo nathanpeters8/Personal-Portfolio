@@ -14,6 +14,7 @@ const ProjectsRowTemplate = (props) => {
                 title={props.projects[i].title}
                 softwares={props.projects[i].softwares}
                 image={props.projects[i].image}
+                urls={props.projects[i].urls}
                 description={props.projects[i].description}
               />
             );

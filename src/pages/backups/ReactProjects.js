@@ -3,7 +3,7 @@ import stock_portfolio from '../images/React/stock_portfolio.PNG';
 import movie_finder from '../images/React/movie_finder.PNG';
 import currency_converter from '../images/React/currency_converter.PNG';
 
-import ProjectTemplate from './ProjectTemplate';
+import ProjectTemplate from '../ProjectTemplate';
 
 const ReactProjects = () => {
   const projects = {

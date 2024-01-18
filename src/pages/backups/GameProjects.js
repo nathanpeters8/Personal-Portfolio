@@ -2,7 +2,7 @@ import avalanche_runner from '../images/VideoGame/avalanche-runner-mainmenu.png'
 import hot_dog from '../images/VideoGame/hot_dog_stand.png';
 import quest_functions from '../images/VideoGame/quest-for-functions.png';
 
-import ProjectTemplate from './ProjectTemplate';
+import ProjectTemplate from '../ProjectTemplate';
 
 
 const GameProjects = () => {

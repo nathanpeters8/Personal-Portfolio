@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'Stop Watch App',
       softwares: ['React', 'JSX'],
       image: require('../images/React/stop_watch.PNG'),
-      links: {
+      urls: {
         page: 'https://nathanpeters8.github.io/React-Stop-Watch/',
         github: 'https://github.com/nathanpeters8/React-Stop-Watch',
       },
@@ -17,7 +17,7 @@ const Projects = () => {
       title: 'Stock Portfolio App',
       softwares: ['React', 'JSX'],
       image: require('../images/React/stock_portfolio.PNG'),
-      links: {
+      urls: {
         page: 'https://nathanpeters8.github.io/React-Stock-Portfolio/',
         github: 'https://github.com/nathanpeters8/React-Stock-Portfolio',
       },
@@ -28,7 +28,7 @@ const Projects = () => {
       title: 'Movie Finder App',
       softwares: ['React', 'JSX', 'AJAX'],
       image: require('../images/React/movie_finder.PNG'),
-      links: {
+      urls: {
         page: 'https://nathanpeters8.github.io/React-Movie-Finder/',
         github: 'https://github.com/nathanpeters8/React-Movie-Finder',
       },
@@ -38,7 +38,7 @@ const Projects = () => {
       title: 'Currency Exchange Rate App',
       softwares: ['React', 'JSX', 'CSS', 'Bootstrap', 'AJAX'],
       image: require('../images/React/currency_converter.PNG'),
-      links: {
+      urls: {
         page: 'https://nathanpeters8.github.io/Currency-Exchange-Rate-App/',
         github: 'https://github.com/nathanpeters8/Currency-Exchange-Rate-App',
       },
@@ -51,7 +51,7 @@ const Projects = () => {
       title: 'Apple Homepage Clone',
       softwares: ['HTML', 'CSS'],
       image: require('../images/WebDev/apple.png'),
-      links: {
+      urls: {
         page: 'https://nate-apple-clone.netlify.app/',
       },
       description: 'Simple React app that simulates a stop watch using hooks, event handlers and intervals.',
@@ -60,7 +60,7 @@ const Projects = () => {
       title: 'Newsweek Homepage Clone',
       softwares: ['HTML', 'CSS', 'Bootstrap 3'],
       image: require('../images/WebDev/newsweek.png'),
-      links: {
+      urls: {
         page: 'https://nate-newsweek-clone.netlify.app/',
       },
       description:
@@ -70,7 +70,7 @@ const Projects = () => {
       title: 'Airbnb News Clone',
       softwares: ['HTML', 'CSS', 'Bootstrap 4'],
       image: require('../images/WebDev/airbnb-news.PNG'),
-      links: {
+      urls: {
         page: 'https://nate-airbnb-news-clone.netlify.app/',
       },
       description:
@@ -80,7 +80,7 @@ const Projects = () => {
       title: 'Shopping Cart',
       softwares: ['HTML', 'CSS', 'Bootstrap 5', 'jQuery'],
       image: require('../images/WebDev/shopping-cart.png'),
-      links: {
+      urls: {
         page: 'https://nate-jquery-shopping-cart.netlify.app/',
       },
       description:
@@ -90,7 +90,7 @@ const Projects = () => {
       title: 'To Do List',
       softwares: ['HTML', 'CSS', 'Bootstrap 5', 'jQuery', 'AJAX'],
       image: require('../images/WebDev/to-do-list.png'),
-      links: {
+      urls: {
         page: 'https://nate-to-do-list.netlify.app/',
       },
       description:
@@ -100,7 +100,7 @@ const Projects = () => {
       title: '10 Second Math Game',
       softwares: ['HTML', 'CSS', 'Bootstrap 5', 'jQuery'],
       image: require('../images/WebDev/10-sec-math-game.png'),
-      links: {
+      urls: {
         page: 'https://nate-10-second-math-game.netlify.app/',
       },
       description:
@@ -112,7 +112,7 @@ const Projects = () => {
       title: 'Rock Paper Scissors',
       softwares: ['JavaScript'],
       image: require('../images/JavaScript/rock_paper_scissors.PNG'),
-      links: {
+      urls: {
         page: 'https://replit.com/@nathanpeters8/Rock-Paper-Scissors',
       },
       description:
@@ -122,7 +122,7 @@ const Projects = () => {
       title: 'Blackjack',
       softwares: ['JavaScript'],
       image: require('../images/JavaScript/blackjack.PNG'),
-      links: {
+      urls: {
         page: 'https://replit.com/@nathanpeters8/Black-Jack',
       },
       description: "This application simulates the casino game Blackjack. Play either one round by yourself without a dealer, or bet \"money\" and play against a dealer until you run out of money.",
@@ -133,8 +133,7 @@ const Projects = () => {
       title: 'VR Hot Dog Stand',
       softwares: ['Unity', 'C#', 'Blender', 'Oculus'],
       image: require('../images/VideoGame/hot_dog_stand.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/VR-Hot-Dog-Stand-Build',
       },
       description:
@@ -144,8 +143,7 @@ const Projects = () => {
       title: 'Quest For Functions',
       softwares: ['Unity', 'C#', 'Aesprite'],
       image: require('../images/VideoGame/quest-for-functions.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/Quest-For-Functions-Build',
       },
       description:
@@ -155,8 +153,7 @@ const Projects = () => {
       title: 'Avalanche Runner',
       softwares: ['Unity', 'C#', 'Blender'],
       image: require('../images/VideoGame/avalanche-runner-mainmenu.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/Avalanche-Runner-Build',
       },
       description:
@@ -168,8 +165,7 @@ const Projects = () => {
       title: 'Similarities Between Text Files',
       softwares: ['Python', 'pandas', 'numpy', 'scikit-learn', 'nltk'],
       image: require('../images/DataScience/similar-text.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/Similarities-Between-Text-Files',
       },
       description:
@@ -179,8 +175,7 @@ const Projects = () => {
       title: 'Classification of Handwritten Digits',
       softwares: ['Python', 'pandas', 'matplotlib', 'scikit-learn', 'scipy'],
       image: require('../images/DataScience/handwritten-digits.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/Classification-of-Handwritten-Digits',
       },
       description:
@@ -190,8 +185,7 @@ const Projects = () => {
       title: 'Book Recommender System',
       softwares: ['Python', 'pandas', 'numpy', 'sqlite3', 'random'],
       image: require('../images/DataScience/customer_recommended_books.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/Book-Recommender-System',
       },
       description:
@@ -201,8 +195,7 @@ const Projects = () => {
       title: 'Airplane Crashes & Fatalities Analysis',
       softwares: ['Python', 'pandas', 'numpy', 'matplotlib', 'scipy'],
       image: require('../images/DataScience/airplane-crash.png'),
-      links: {
-        page: '',
+      urls: {
         github: 'https://github.com/nathanpeters8/Airplane-Crashes-Fatalities-From-1908-to-2009',
       },
       description:
@@ -216,7 +209,7 @@ const Projects = () => {
       <p className='small fst-italic text-center'>(click on image to go to URL or GitHub repo)</p>
       <hr className='mb-5 pb-4' />
       <div className='btn-group d-flex justify-content-center gap-2 mb-5'>
-        <Link to='/' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded active'>
+        <Link to='/' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
           React
         </Link>
         <Link to='/webdev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>

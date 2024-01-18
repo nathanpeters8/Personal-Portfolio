@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin, faGithub, faHackerrank } from "@fortawesome/free-brands-svg-icons";
-import { faLaptopCode, faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faLocationDot, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import NavBar from './pages/NavBar';
@@ -13,7 +13,7 @@ import Heading from './pages/Heading';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 
-library.add(faLinkedin, faGithub, faHackerrank, faLaptopCode, faLocationDot, faEnvelope);
+library.add(faLinkedin, faGithub, faHackerrank, faLaptopCode, faLocationDot, faEnvelope, faGlobe);
 
 function App() {
   return (

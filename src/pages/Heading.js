@@ -13,7 +13,7 @@ const Heading = () => {
             </div>
           </div>
           <div className='col-12 ps-0 mt-2 d-flex flex-column flex-sm-row flex-nowrap justify-content-start justify-content-md-center'>
-            <div className='site-links h5'>
+            <div className='site-links h3'>
               <a
                 title='LinkedIn'
                 target='_blank'
