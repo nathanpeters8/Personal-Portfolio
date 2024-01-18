@@ -46,12 +46,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
+  transition: opacity 1s ease;
 }
 
-.aspectRatioBox:hover{
+/* .aspectRatioBox:hover{
   transform: scale(1.05);
   transition: 0.5s linear;
-}
+} */
 
 .left {
   background-position: left;
@@ -218,6 +219,23 @@ body {
   transition: 0.2s linear;
 }
 
+.project-buttons {
+  opacity: 0 !important;
+  transition: opacity 1s ease;
+}
+
+.project-container:hover .project-buttons {
+  opacity: 1 !important;
+}
+
+.project-container:hover .aspectRatioBox {
+  opacity: 0.5 !important;
+}
+
+.project-container:hover {
+  transform: scale(1.05);
+  transition: 0.5s linear;
+}
 
 /* Footer */
 footer a {
