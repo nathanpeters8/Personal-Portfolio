@@ -1,3 +1,4 @@
+import AvalancheRunner from './games/AvalancheRunner';
 import ProjectsRowTemplate from './ProjectsRowTemplate';
 import { Link, Routes, Route } from 'react-router-dom';
 
@@ -134,6 +135,7 @@ const Projects = () => {
       softwares: ['Unity', 'C#', 'Blender', 'Oculus'],
       image: require('../images/VideoGame/hot_dog_stand.png'),
       urls: {
+        game: '/gamedev/hotdogstand',
         github: 'https://github.com/nathanpeters8/VR-Hot-Dog-Stand-Build',
       },
       description:
@@ -144,6 +146,7 @@ const Projects = () => {
       softwares: ['Unity', 'C#', 'Aesprite'],
       image: require('../images/VideoGame/quest-for-functions.png'),
       urls: {
+        game: '/gamedev/questforfunctions',
         github: 'https://github.com/nathanpeters8/Quest-For-Functions-Build',
       },
       description:
@@ -154,6 +157,7 @@ const Projects = () => {
       softwares: ['Unity', 'C#', 'Blender'],
       image: require('../images/VideoGame/avalanche-runner-mainmenu.png'),
       urls: {
+        game: '/gamedev/avalancherunner',
         github: 'https://github.com/nathanpeters8/Avalanche-Runner-Build',
       },
       description:
@@ -218,7 +222,7 @@ const Projects = () => {
         <Link to='/javascript' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
           JavaScript
         </Link>
-        <Link to='/gamedev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+        <Link to='/gamedev/*' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
           Game Dev
         </Link>
         <Link to='/datascience' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
@@ -226,11 +230,7 @@ const Projects = () => {
         </Link>
       </div>
       <Routes>
-        <Route 
-          path='/' 
-          element={<ProjectsRowTemplate projects={reactProjects} 
-          title='React.js Development' />} 
-        />
+        <Route path='/' element={<ProjectsRowTemplate projects={reactProjects} title='React.js Development' />} />
         <Route
           path='/webdev'
           element={<ProjectsRowTemplate projects={webDevProjects} title='HTML & CSS Development' />}
@@ -239,10 +239,7 @@ const Projects = () => {
           path='/javascript'
           element={<ProjectsRowTemplate projects={jsProjects} title='JavaScript Development' />}
         />
-        <Route
-          path='/gamedev'
-          element={<ProjectsRowTemplate projects={gameDevProjects} title='Game Development' />}
-        />
+        <Route path='/gamedev/*' element={<ProjectsRowTemplate projects={gameDevProjects} title='Game Development' />} />
         <Route
           path='/datascience'
           element={<ProjectsRowTemplate projects={dataScienceProjects} title='Data Science Development' />}
