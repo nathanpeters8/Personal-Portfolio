@@ -1,4 +1,4 @@
-import AvalancheRunner from './games/AvalancheRunner';
+import AvalancheRunner from './AvalancheRunner';
 import ProjectsRowTemplate from './ProjectsRowTemplate';
 import { Link, Routes, Route } from 'react-router-dom';
 

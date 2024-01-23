@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import './style.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin, faGithub, faHackerrank } from "@fortawesome/free-brands-svg-icons";
@@ -12,13 +14,13 @@ import NavBar from './pages/NavBar';
 import Heading from './pages/Heading';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
-import AvalancheRunner from './pages/games/AvalancheRunner';
+import AvalancheRunner from './pages/AvalancheRunner';
 import QuestForFunctions from './pages/games/QuestForFunction';
 import HotDogStand from './pages/games/HotDogStand';
 
 library.add(faLinkedin, faGithub, faHackerrank, faLaptopCode, faLocationDot, faEnvelope, faGlobe, faPlay);
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <div className='background-image rounded-3'>

@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Routes, Route, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+
 
 
 const ProjectTemplate = (props) => {
@@ -59,7 +61,7 @@ const ProjectTemplate = (props) => {
               {(() => {
                 return props.softwares.map((soft, i) => {
                   return (
-                    <li>
+                    <li key={soft}>
                       <h6 className='mx-1 list-group-item rounded-2 p-1'>{soft}</h6>
                     </li>
                   );

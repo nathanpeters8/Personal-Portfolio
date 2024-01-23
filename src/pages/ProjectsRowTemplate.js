@@ -16,6 +16,7 @@ const ProjectsRowTemplate = (props) => {
                 image={props.projects[i].image}
                 urls={props.projects[i].urls}
                 description={props.projects[i].description}
+                key={props.projects[i].title}
               />
             );
           });
