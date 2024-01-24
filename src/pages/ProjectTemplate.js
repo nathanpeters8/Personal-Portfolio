@@ -34,7 +34,7 @@ const ProjectTemplate = (props) => {
                     return null;
                   }
                   return (
-                    <Link to={props.urls.game} className='btn btn-outline-light flex-fill btn-lg border-0'>
+                    <Link to='/playgame' className='btn btn-outline-light flex-fill btn-lg border-0'>
                       <FontAwesomeIcon icon='fa-solid fa-play fa-xl'></FontAwesomeIcon>
                     </Link>
                   );

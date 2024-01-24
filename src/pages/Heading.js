@@ -49,27 +49,9 @@ const Heading = () => {
             </div>
           </div>
           <hr className='my-3' />
-          <div className='col-12 info d-flex flex-column align-items-md-center'>
-            <h5 className='d-flex align-items-center'>
-              <FontAwesomeIcon icon='fa-solid fa-location-dot' className='me-3'></FontAwesomeIcon>Denver, Colorado
-            </h5>
-            <h5 className='d-flex align-items-center'>
-              <FontAwesomeIcon icon='fa-solid fa-envelope' className='me-3'></FontAwesomeIcon>peters.nate8@gmail.com
-            </h5>
-          </div>
         </div>
       </div>
-      <div className="about container-xxl mt-5">
-        <div className="row">
-          <div className="col-12">
-            <div className="about-heading">
-              <h2 className="fw-bold fs-2 d-flex justify-content-md-center">About Me</h2>
-              <hr/>
-              <p>I'm an aspiring Full Stack Web Developer, with previous skills in Data Science & Game Development. I currently have a Bachelor's degree in Information Science, and am currently enrolled in a certificate program for Full Stack Web Development. I also work remotely as a Programming Instructor.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </>
   );
 };

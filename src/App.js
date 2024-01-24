@@ -10,43 +10,18 @@ import { faLinkedin, faGithub, faHackerrank } from "@fortawesome/free-brands-svg
 import { faLaptopCode, faLocationDot, faEnvelope, faGlobe, faPlay } from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-import NavBar from './pages/NavBar';
-import Heading from './pages/Heading';
-import Resume from './pages/Resume';
+import About from './pages/About';
 import Projects from './pages/Projects';
-import AvalancheRunner from './pages/AvalancheRunner';
-import QuestForFunctions from './pages/games/QuestForFunction';
-import HotDogStand from './pages/games/HotDogStand';
 
 library.add(faLinkedin, faGithub, faHackerrank, faLaptopCode, faLocationDot, faEnvelope, faGlobe, faPlay);
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='background-image rounded-3'>
-        <div className='container-xxl text-bg-dark bg-opacity-75'>
-          <div className='sm-background-image rounded-3'>
-            <div className='sm-background-color'>
-              <NavBar />
-              <Heading />
-            </div>
-          </div>
-          <Resume />
-        </div>
-      </div>
-      <div className='projects-background container-xxl rounded-3 pt-5' id='projects'>
-        <Projects />
-        <Routes>
-          <Route path='/gamedev/avalancherunner' element={<AvalancheRunner />}></Route>
-          <Route path='/gamedev/questforfunctions' element={<QuestForFunctions />}></Route>
-          <Route path='/gamedev/hotdogstand' element={<HotDogStand />}></Route>
-        </Routes>
-        <footer>
-          <a href='https://www.altcademy.com/' className='text-white d-flex pb-2 text-decoration-none'>
-            Part of Altcademy's Full Stack Program
-          </a>
-        </footer>
-      </div>
+      <Routes>
+        <Route path='/' element={<About />}></Route>
+        <Route path='projects/*' element={<Projects />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }
