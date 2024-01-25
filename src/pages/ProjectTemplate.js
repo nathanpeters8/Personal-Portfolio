@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Routes, Route, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+
 
 
 const ProjectTemplate = (props) => {
@@ -32,9 +34,13 @@ const ProjectTemplate = (props) => {
                     return null;
                   }
                   return (
-                    <Link to={props.urls.game} className='btn btn-outline-light flex-fill btn-lg border-0'>
+                    <a
+                      href={props.urls.game}
+                      target='_blank'
+                      className='btn btn-outline-light flex-fill btn-lg border-0'
+                    >
                       <FontAwesomeIcon icon='fa-solid fa-play fa-xl'></FontAwesomeIcon>
-                    </Link>
+                    </a>
                   );
                 })()}
                 {(() => {
@@ -59,7 +65,7 @@ const ProjectTemplate = (props) => {
               {(() => {
                 return props.softwares.map((soft, i) => {
                   return (
-                    <li>
+                    <li key={soft}>
                       <h6 className='mx-1 list-group-item rounded-2 p-1'>{soft}</h6>
                     </li>
                   );
