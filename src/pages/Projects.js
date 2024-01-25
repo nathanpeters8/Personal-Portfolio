@@ -1,5 +1,8 @@
+
 import ProjectsRowTemplate from './ProjectsRowTemplate';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link, Routes, Route, Navigate } from 'react-router-dom';
+import NavBar from './NavBar';
+import Heading from './Heading';
 
 const Projects = () => {
   const reactProjects = {
@@ -134,6 +137,7 @@ const Projects = () => {
       softwares: ['Unity', 'C#', 'Blender', 'Oculus'],
       image: require('../images/VideoGame/hot_dog_stand.png'),
       urls: {
+        game: 'https://nathanpeters8.github.io/HotDogStand_WebGL/',
         github: 'https://github.com/nathanpeters8/VR-Hot-Dog-Stand-Build',
       },
       description:
@@ -144,6 +148,7 @@ const Projects = () => {
       softwares: ['Unity', 'C#', 'Aesprite'],
       image: require('../images/VideoGame/quest-for-functions.png'),
       urls: {
+        game: 'https://nathanpeters8.github.io/QuestForFunctions_WebGL/',
         github: 'https://github.com/nathanpeters8/Quest-For-Functions-Build',
       },
       description:
@@ -154,6 +159,7 @@ const Projects = () => {
       softwares: ['Unity', 'C#', 'Blender'],
       image: require('../images/VideoGame/avalanche-runner-mainmenu.png'),
       urls: {
+        game: 'https://nathanpeters8.github.io/AvalancheRunner_WebGL/',
         github: 'https://github.com/nathanpeters8/Avalanche-Runner-Build',
       },
       description:
@@ -205,49 +211,55 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center'>Projects</h2>
-      <p className='small fst-italic text-center'>(click on image to go to URL or GitHub repo)</p>
-      <hr className='mb-5 pb-4' />
-      <div className='btn-group d-flex justify-content-center gap-2 mb-5'>
-        <Link to='/' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
-          React
-        </Link>
-        <Link to='/webdev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
-          Web Dev
-        </Link>
-        <Link to='/javascript' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
-          JavaScript
-        </Link>
-        <Link to='/gamedev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
-          Game Dev
-        </Link>
-        <Link to='/datascience' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
-          Data Science
-        </Link>
+      <div className='projects-background container-xxl rounded-3' id='projects'>
+        <NavBar />
+        <Heading />
+        <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Projects</h2>
+        <p className='small fst-italic text-center'>(click on image to go to URL or GitHub repo)</p>
+        <hr className='mb-5 pb-4' />
+        <div className='btn-group d-flex justify-content-center gap-2 mb-5'>
+          <Link to='react' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+            React
+          </Link>
+          <Link to='webdev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+            Web Dev
+          </Link>
+          <Link to='javascript' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+            JavaScript
+          </Link>
+          <Link to='gamedev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+            Game Dev
+          </Link>
+          <Link to='datascience' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+            Data Science
+          </Link>
+        </div>
+        <Routes>
+          <Route path='react' element={<ProjectsRowTemplate projects={reactProjects} title='React.js Development' />} />
+          <Route
+            path='webdev'
+            element={<ProjectsRowTemplate projects={webDevProjects} title='HTML & CSS Development' />}
+          />
+          <Route
+            path='javascript'
+            element={<ProjectsRowTemplate projects={jsProjects} title='JavaScript Development' />}
+          />
+          <Route
+            path='gamedev'
+            element={<ProjectsRowTemplate projects={gameDevProjects} title='Game Development' />}
+          />
+          <Route
+            path='datascience'
+            element={<ProjectsRowTemplate projects={dataScienceProjects} title='Data Science Development' />}
+          />
+          <Route path='' element={<Navigate to='/projects/react'/>}/>
+        </Routes>
+        <footer>
+          <a href='https://www.altcademy.com/' className='text-white d-flex pb-2 text-decoration-none'>
+            Part of Altcademy's Full Stack Program
+          </a>
+        </footer>
       </div>
-      <Routes>
-        <Route 
-          path='/' 
-          element={<ProjectsRowTemplate projects={reactProjects} 
-          title='React.js Development' />} 
-        />
-        <Route
-          path='/webdev'
-          element={<ProjectsRowTemplate projects={webDevProjects} title='HTML & CSS Development' />}
-        />
-        <Route
-          path='/javascript'
-          element={<ProjectsRowTemplate projects={jsProjects} title='JavaScript Development' />}
-        />
-        <Route
-          path='/gamedev'
-          element={<ProjectsRowTemplate projects={gameDevProjects} title='Game Development' />}
-        />
-        <Route
-          path='/datascience'
-          element={<ProjectsRowTemplate projects={dataScienceProjects} title='Data Science Development' />}
-        />
-      </Routes>
     </>
   );
 };
