@@ -7,12 +7,9 @@ const Heading = () => {
           <div className='col-12 d-flex flex-column align-items-md-center flex-wrap'>
             <div className='heading pb-2'>
               <h1 className='display-4'>Nathan Peters</h1>
-              <p className='small fst-italic'>
-                ** currently working on converting portfolio into a React.js application... **
-              </p>
             </div>
           </div>
-          <div className='col-12 ps-0 mt-2 d-flex flex-column flex-sm-row flex-nowrap justify-content-start justify-content-md-center'>
+          <div className='col-12 ps-0 mt-4 d-flex flex-column flex-sm-row flex-nowrap justify-content-start justify-content-md-center'>
             <div className='site-links h3'>
               <a
                 title='LinkedIn'
@@ -48,7 +45,6 @@ const Heading = () => {
               </a>
             </div>
           </div>
-          <hr className='my-3' />
         </div>
       </div>
 

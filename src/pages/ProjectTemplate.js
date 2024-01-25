@@ -34,9 +34,13 @@ const ProjectTemplate = (props) => {
                     return null;
                   }
                   return (
-                    <Link to='/playgame' className='btn btn-outline-light flex-fill btn-lg border-0'>
+                    <a
+                      href={props.urls.game}
+                      target='_blank'
+                      className='btn btn-outline-light flex-fill btn-lg border-0'
+                    >
                       <FontAwesomeIcon icon='fa-solid fa-play fa-xl'></FontAwesomeIcon>
-                    </Link>
+                    </a>
                   );
                 })()}
                 {(() => {
