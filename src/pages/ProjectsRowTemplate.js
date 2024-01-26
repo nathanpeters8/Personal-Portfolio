@@ -1,8 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectTemplate from "./ProjectTemplate";
+import { useRef, useEffect } from 'react';
 
 
 const ProjectsRowTemplate = (props) => {
+
   const projectRowVariants = {
     enter: (direction) => {
       console.log('enter dir ' + direction);
@@ -46,7 +48,7 @@ const ProjectsRowTemplate = (props) => {
           x: { type: 'spring', stiffness: 300},
         }}
       >
-        <div className='row overflow-scroll overflow-y-hidden flex-nowrap mt-4 mb-5 flex-row-reverse'>
+        <div className={'row ' + (Object.keys(props.projects).length < 3 ? 'justify-content-lg-around ' : 'overflow-scroll ') + 'overflow-y-hidden flex-nowrap mt-4 mb-5 flex-row'}>
           {(() => {
             return Object.keys(props.projects).map((proj, i) => {
               return (
