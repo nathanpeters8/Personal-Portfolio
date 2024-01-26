@@ -1,10 +1,19 @@
 
+import { Link, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import {motion, AnimatePresence} from 'framer-motion';
+
 import ProjectsRowTemplate from './ProjectsRowTemplate';
-import { Link, Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './NavBar';
 import Heading from './Heading';
 
 const Projects = () => {
+  const [page, setPage] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  const location = useLocation();
+
+
   const reactProjects = {
     0: {
       title: 'Stop Watch App',
@@ -209,57 +218,106 @@ const Projects = () => {
     },
   };
 
+  const pageVariants = {
+    visible: {opacity: 1},
+    hidden: {opacity: 0}
+  }
+
+  const handlePageChange = (newPage) => {
+    // moving right
+    if(newPage > page) {
+      console.log('right');
+      setDirection(1);
+    }
+    //moving left
+    else if(newPage < page) {
+      console.log('left');
+      setDirection(-1);
+    }
+    setPage(newPage);
+  };
+
   return (
     <>
-      <div className='projects-background container-xxl rounded-3' id='projects'>
+      <motion.div
+        className='projects-background container-xxl rounded-3'
+        id='projects'
+        variants={pageVariants}
+        initial={false}
+        animate='visible'
+        exit='hidden'
+      >
         <NavBar />
         <Heading />
         <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Projects</h2>
         <p className='small fst-italic text-center'>(click on image to go to URL or GitHub repo)</p>
         <hr className='mb-5 pb-4' />
         <div className='btn-group d-flex justify-content-center gap-2 mb-5'>
-          <Link to='react' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+          <Link
+            to='react'
+            className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'
+            onClick={() => handlePageChange(0)}
+          >
             React
           </Link>
-          <Link to='webdev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+          <Link
+            to='webdev'
+            className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'
+            onClick={() => handlePageChange(1)}
+          >
             Web Dev
           </Link>
-          <Link to='javascript' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+          <Link
+            to='javascript'
+            className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'
+            onClick={() => handlePageChange(2)}
+          >
             JavaScript
           </Link>
-          <Link to='gamedev' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+          <Link
+            to='gamedev'
+            className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'
+            onClick={() => handlePageChange(3)}
+          >
             Game Dev
           </Link>
-          <Link to='datascience' className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'>
+          <Link
+            to='datascience'
+            className='btn btn-sm text-nowrap overflow-hidden btn-light rounded'
+            onClick={() => handlePageChange(4)}
+          >
             Data Science
           </Link>
         </div>
-        <Routes>
-          <Route path='react' element={<ProjectsRowTemplate projects={reactProjects} title='React.js Development' />} />
+        <Routes location={location}>
+          <Route
+            path='react'
+            element={<ProjectsRowTemplate projects={reactProjects} title='React.js Development' direction={direction}/>}
+          />
           <Route
             path='webdev'
-            element={<ProjectsRowTemplate projects={webDevProjects} title='HTML & CSS Development' />}
+            element={<ProjectsRowTemplate projects={webDevProjects} title='HTML & CSS Development' direction={direction}/>}
           />
           <Route
             path='javascript'
-            element={<ProjectsRowTemplate projects={jsProjects} title='JavaScript Development' />}
+            element={<ProjectsRowTemplate projects={jsProjects} title='JavaScript Development' direction={direction}/>}
           />
           <Route
             path='gamedev'
-            element={<ProjectsRowTemplate projects={gameDevProjects} title='Game Development' />}
+            element={<ProjectsRowTemplate projects={gameDevProjects} title='Game Development' direction={direction}/>}
           />
           <Route
             path='datascience'
-            element={<ProjectsRowTemplate projects={dataScienceProjects} title='Data Science Development' />}
+            element={<ProjectsRowTemplate projects={dataScienceProjects} title='Data Science Development' direction={direction}/>}
           />
-          <Route path='' element={<Navigate to='/projects/react'/>}/>
+          <Route path='' element={<Navigate to='/projects/react' />} />
         </Routes>
         <footer>
           <a href='https://www.altcademy.com/' className='text-white d-flex pb-2 text-decoration-none'>
             Part of Altcademy's Full Stack Program
           </a>
         </footer>
-      </div>
+      </motion.div>
     </>
   );
 };
