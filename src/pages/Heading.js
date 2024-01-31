@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Heading = () => {
   return (
     <>
@@ -14,34 +15,38 @@ const Heading = () => {
               <a
                 title='LinkedIn'
                 target='_blank'
+                rel='noreferrer'
                 href='https://www.linkedin.com/in/nathan-peters8/'
                 className='text-light px-3 py-1'
               >
-                <FontAwesomeIcon icon='fab fa-linkedin fa-xl'></FontAwesomeIcon>
+                <FontAwesomeIcon icon='fab fa-linkedin fa-xl' className='icon'></FontAwesomeIcon>
               </a>
               <a
                 title='GitHub'
                 target='_blank'
+                rel='noreferrer'
                 href='https://github.com/nathanpeters8'
                 className='text-light px-3 py-1'
               >
-                <FontAwesomeIcon icon='fab fa-github fa-xl'></FontAwesomeIcon>
+                <FontAwesomeIcon icon='fab fa-github fa-xl' className='icon'></FontAwesomeIcon>
               </a>
               <a
                 title='Replit'
                 target='_blank'
+                rel='noreferrer'
                 href='https://replit.com/@nathanpeters8'
                 className='text-light px-3 py-1'
               >
-                <FontAwesomeIcon icon='fa-solid fa-laptop-code fa-xl'></FontAwesomeIcon>
+                <FontAwesomeIcon icon='fa-solid fa-laptop-code fa-xl' className='icon'></FontAwesomeIcon>
               </a>
               <a
                 title='HackerRank'
                 target='_blank'
+                rel='noreferrer'
                 href='https://www.hackerrank.com/peters_nate8'
                 className='text-light px-3 py-1'
               >
-                <FontAwesomeIcon icon='fab fa-hackerrank fa-xl'></FontAwesomeIcon>
+                <FontAwesomeIcon icon='fab fa-hackerrank fa-xl' className='icon'></FontAwesomeIcon>
               </a>
             </div>
           </div>

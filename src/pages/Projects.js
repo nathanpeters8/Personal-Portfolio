@@ -1,7 +1,7 @@
 
 import { Link, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
-import {motion, AnimatePresence} from 'framer-motion';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import ProjectsRowTemplate from './ProjectsRowTemplate';
 import NavBar from './NavBar';
@@ -255,11 +255,11 @@ const Projects = () => {
         </div>
         <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Projects</h2>
         <hr className='mb-5 pb-4' />
-        <div className='btn-group d-flex justify-content-center gap-2 mb-5'>
+        <div className='project-row-btns btn-group d-flex justify-content-center gap-2 mb-5'>
           <Link
             to='react'
             className={
-              'btn btn-sm text-nowrap overflow-hidden btn-outline-light rounded ' + (page === 0 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 0 ? 'active' : '')
             }
             onClick={() => handlePageChange(0)}
           >
@@ -268,7 +268,7 @@ const Projects = () => {
           <Link
             to='webdev'
             className={
-              'btn btn-sm text-nowrap overflow-hidden btn-outline-light rounded ' + (page === 1 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 1 ? 'active' : '')
             }
             onClick={() => handlePageChange(1)}
           >
@@ -277,7 +277,7 @@ const Projects = () => {
           <Link
             to='javascript'
             className={
-              'btn btn-sm text-nowrap overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
             }
             onClick={() => handlePageChange(2)}
           >
@@ -286,7 +286,7 @@ const Projects = () => {
           <Link
             to='gamedev'
             className={
-              'btn btn-sm text-nowrap overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
             }
             onClick={() => handlePageChange(3)}
           >
@@ -295,7 +295,7 @@ const Projects = () => {
           <Link
             to='datascience'
             className={
-              'btn btn-sm text-nowrap overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
             }
             onClick={() => handlePageChange(4)}
           >
