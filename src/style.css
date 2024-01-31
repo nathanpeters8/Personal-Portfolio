@@ -78,6 +78,10 @@ body {
   outline: none;
 }
 
+.semi-transparent {
+  background-color: rgba(69, 73, 78, 0.75);
+}
+
 /* Heading */
 @media (min-width: 768px) {
   .heading {
