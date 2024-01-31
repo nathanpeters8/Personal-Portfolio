@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Routes, Route, Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 
 
 
@@ -24,6 +23,7 @@ const ProjectTemplate = (props) => {
                       href={props.urls.page}
                       className='btn btn-outline-light flex-fill btn-lg border-0'
                       target='_blank'
+                      rel='noreferrer'
                     >
                       <FontAwesomeIcon icon='fa-solid fa-globe'></FontAwesomeIcon>
                     </a>
@@ -37,6 +37,7 @@ const ProjectTemplate = (props) => {
                     <a
                       href={props.urls.game}
                       target='_blank'
+                      rel='noreferrer'
                       className='btn btn-outline-light flex-fill btn-lg border-0'
                     >
                       <FontAwesomeIcon icon='fa-solid fa-play fa-xl'></FontAwesomeIcon>
@@ -52,6 +53,7 @@ const ProjectTemplate = (props) => {
                       href={props.urls.github}
                       className='btn btn-outline-light flex-fill btn-lg border-0'
                       target='_blank'
+                      rel='noreferrer'
                     >
                       <FontAwesomeIcon icon='fab fa-github'></FontAwesomeIcon>
                     </a>
