@@ -46,12 +46,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
+  transition: opacity 1s ease;
 }
 
-.aspectRatioBox:hover{
+/* .aspectRatioBox:hover{
   transform: scale(1.05);
   transition: 0.5s linear;
-}
+} */
 
 .left {
   background-position: left;
@@ -77,6 +78,10 @@ body {
   outline: none;
 }
 
+.semi-transparent {
+  background-color: rgba(69, 73, 78, 0.75);
+}
+
 /* Heading */
 @media (min-width: 768px) {
   .heading {
@@ -84,7 +89,7 @@ body {
   }
 }
 
-.site-links i:hover {
+.site-links .icon:hover {
   transform: scale(1.3) translate(0, -1px);
 }
 
@@ -218,6 +223,35 @@ body {
   transition: 0.2s linear;
 }
 
+.project-buttons {
+  opacity: 0 !important;
+  transition: opacity 1s ease;
+}
+
+.project-container:hover .project-buttons {
+  opacity: 1 !important;
+}
+
+.project-container:hover .aspectRatioBox {
+  opacity: 0.5 !important;
+}
+
+.project-container:hover {
+  transform: scale(1.05);
+  transition: 0.5s linear;
+}
+
+@media (max-width: 576px) {
+  .project-row-btns .btn {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .project-row-btns .btn {
+    font-size: 0.7rem;
+  }
+}
 
 /* Footer */
 footer a {
