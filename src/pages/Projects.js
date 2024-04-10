@@ -58,6 +58,28 @@ const Projects = () => {
       description: 'Simple React app that simulates a stop watch using hooks, event handlers and intervals.',
     },
   };
+  const rubyOnRailsProjects = {
+    0: {
+      title: 'Twitter Clone',
+      softwares: ['Ruby on Rails', 'AWS S3', 'Mailgun'],
+      image: require('../images/RubyOnRails/twitter_clone.png'),
+      urls: {
+        github: 'https://github.com/nathanpeters8/bewd-twitter-advanced',
+      },
+      description:
+        'A backend API that mimics the functionality of Twitter. Users can create accounts, see a feed of tweets, post tweets with or without images, and delete tweets. This API also sends the user an email with Mailgun when they post a tweet.',
+    },
+    1: {
+      title: 'To Do List w/ User Authentication',
+      softwares: ['Ruby on Rails'],
+      image: require('../images/RubyOnRails/bewd_todolist.png'),
+      urls: {
+        github: 'https://github.com/nathanpeters8/bewd-todolist-user-auth',
+      },
+      description:
+        'A backend API that serves a to-do list application. Users can create accounts, log in, log out, and create, delete, and mark completed tasks.',
+    },
+  };
   const webDevProjects = {
     0: {
       title: '10 Second Math Game',
@@ -263,41 +285,50 @@ const Projects = () => {
             }
             onClick={() => handlePageChange(0)}
           >
-            React
+            React.js
           </Link>
           <Link
-            to='webdev'
+            to='rubyonrails'
             className={
               'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 1 ? 'active' : '')
             }
             onClick={() => handlePageChange(1)}
           >
-            Web Dev
+            Rails
           </Link>
           <Link
-            to='javascript'
+            to='webdev'
             className={
               'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
             }
             onClick={() => handlePageChange(2)}
+          >
+            HTML/CSS
+          </Link>
+          <Link
+            to='javascript'
+            className={
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
+            }
+            onClick={() => handlePageChange(3)}
           >
             JavaScript
           </Link>
           <Link
             to='gamedev'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
             }
-            onClick={() => handlePageChange(3)}
+            onClick={() => handlePageChange(4)}
           >
             Game Dev
           </Link>
           <Link
             to='datascience'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
+              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 5 ? 'active' : '')
             }
-            onClick={() => handlePageChange(4)}
+            onClick={() => handlePageChange(5)}
           >
             Data Science
           </Link>
@@ -307,6 +338,12 @@ const Projects = () => {
             path='react'
             element={
               <ProjectsRowTemplate projects={reactProjects} title='React.js Development' direction={direction} />
+            }
+          />
+          <Route
+            path='rubyonrails'
+            element={
+              <ProjectsRowTemplate projects={rubyOnRailsProjects} title='Ruby On Rails' direction={direction} />
             }
           />
           <Route
