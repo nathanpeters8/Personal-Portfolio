@@ -67,7 +67,7 @@ const Projects = () => {
         github: 'https://github.com/nathanpeters8/bewd-twitter-advanced',
       },
       description:
-        'A backend API that mimics the functionality of Twitter. Users can create accounts, see a feed of tweets, post tweets with or without images, and delete tweets. This API also sends the user an email with Mailgun when they post a tweet.',
+        'An API backend that mimics the functionality of Twitter. Users can create accounts, see a feed of tweets, post tweets with or without images, and delete tweets. This API also sends the user an email with Mailgun when they post a tweet.',
     },
     1: {
       title: 'To Do List w/ User Authentication',
@@ -77,7 +77,7 @@ const Projects = () => {
         github: 'https://github.com/nathanpeters8/bewd-todolist-user-auth',
       },
       description:
-        'A backend API that serves a to-do list application. Users can create accounts, log in, log out, and create, delete, and mark completed tasks.',
+        'A API backend that serves a to-do list web page. Users can create accounts, log in, log out, and create, delete, and mark completed tasks.',
     },
   };
   const webDevProjects = {

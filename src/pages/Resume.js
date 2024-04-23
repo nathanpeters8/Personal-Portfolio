@@ -8,10 +8,11 @@ const Resume = () => {
             <div className='about-heading'>
               <h2 className='fw-bold fs-2 d-flex justify-content-md-center'>About Me</h2>
               <hr />
-              <p>
-                I'm an aspiring Full Stack Web Developer, with previous skills in Data Science & Game Development. I
-                currently have a Bachelor's degree in Information Science, and am currently enrolled in a certificate
-                program for Full Stack Web Development. I also work remotely as a Programming Instructor.
+              <p className='text-center'>
+                As an enthusiastic and aspiring Full Stack Web Developer with a solid foundation in Information Science,
+                I am passionate about creating high quality and innovative digital solutions. With my academic history,
+                and hands-on experience in creating several different web pages, I am equipped with a diverse skill set
+                to tackle challenges in the world of web development.
               </p>
             </div>
           </div>
@@ -42,6 +43,9 @@ const Resume = () => {
                     <li>
                       Lua <small>(2 years)</small>
                     </li>
+                    <li>
+                      Ruby <small>({'<'} 1 year)</small>
+                    </li>
                   </ul>
                 </div>
                 <div className='col-6 col-md-3 d-flex flex-column'>
@@ -63,7 +67,7 @@ const Resume = () => {
                       ReactJS <small>({'<'} 1 year)</small>
                     </li>
                     <li>
-                      JSX <small>({'<'} 1 year)</small>
+                      Ruby On Rails <small>({'<'} 1 year)</small>
                     </li>
                   </ul>
                 </div>
@@ -124,9 +128,9 @@ const Resume = () => {
                 <p className='lh-sm pt-2'>
                   Currently enrolled in Altcademy's full stack web development certificate program. So far I have
                   learned about building responsive websites using HTML, CSS, & Bootstrap, building dynamic websites
-                  with JavaScript & jQuery, connecting to an API using Ajax, and building web applications using
-                  React.js. Soon I will focus on learning back-end web development with Ruby on Rails, and deploying a
-                  full-stack application with Heroku, and learning Typescript.
+                  with JavaScript & jQuery, connecting to an API using Ajax, building web applications using React.jsand
+                  finally learning back-end web development with Ruby on Rails. Soon I will learn about deploying a
+                  full-stack application with Heroku, learning Typescript.
                 </p>
               </div>
               <div className='mb-5 pt-3'>
