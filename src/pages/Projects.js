@@ -262,7 +262,7 @@ const Projects = () => {
   return (
     <>
       <motion.div
-        className='projects-background container-xxl rounded-3 px-2 px-md-0'
+        className='projects-background container-xxl rounded-3'
         id='projects'
         variants={pageVariants}
         initial='hidden'
