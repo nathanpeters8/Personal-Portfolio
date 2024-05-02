@@ -10,7 +10,7 @@ const Certificates = () => {
     require('../images/Certifications/Dynamic_Website.png'),
     require('../images/Certifications/React.png'),
     require('../images/Certifications/Ruby.png'),
-    require('../images/Certifications/Ruby_On_Rails.png')
+    require('../images/Certifications/Ruby_On_Rails.png'),
   ];
 
   return (
@@ -29,72 +29,90 @@ const Certificates = () => {
         </div>
         <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Certificates</h2>
         <hr className='mb-5 pb-4' />
-        <div>
-          <div className='row'>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <div className='card text-bg-dark bg-opacity-25 mb-3'>
+        <div className='row'>
+          <div className='col-12 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a
+                target='_blank'
+                href='https://www.altcademy.com/@nathanpeters8/certificate/webdesignium'
+                rel='noreferrer'
+              >
                 <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[0]})` }}></div>
-                <div className='card-body d-flex flex-column align-items-center'>
-                  <h5 className='card-title text-center'>HTML/CSS Development</h5>
-                  <p className='card-text text-center'>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                </div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>HTML/CSS Development</h5>
+                <p className='card-text text-center'>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <div className='card text-bg-dark bg-opacity-25 mb-3'>
+          </div>
+          <div className='col-12 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a
+                target='_blank'
+                href='https://www.altcademy.com/@nathanpeters8/certificate/javascriptium'
+                rel='noreferrer'
+              >
                 <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[1]})` }}></div>
-                <div className='card-body d-flex flex-column align-items-center'>
-                  <h5 className='card-title text-center'>JavaScript Programming</h5>
-                  <p className='card-text text-center'>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                </div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>JavaScript Programming</h5>
+                <p className='card-text text-center'>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <div className='card text-bg-dark bg-opacity-25 mb-3'>
+          </div>
+          <div className='col-12 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a target='_blank' href='https://www.altcademy.com/@nathanpeters8/certificate/jqueryium' rel='noreferrer'>
                 <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[2]})` }}></div>
-                <div className='card-body d-flex flex-column align-items-center'>
-                  <h5 className='card-title text-center'>Dynamic Website Development</h5>
-                  <p className='card-text text-center'>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                </div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>Dynamic Website Development</h5>
+                <p className='card-text text-center'>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <div className='card text-bg-dark bg-opacity-25 mb-3'>
+          </div>
+          <div className='col-12 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a target='_blank' href='https://www.altcademy.com/@nathanpeters8/certificate/reactjs' rel='noreferrer'>
                 <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[3]})` }}></div>
-                <div className='card-body d-flex flex-column align-items-center'>
-                  <h5 className='card-title text-center'>React Development</h5>
-                  <p className='card-text text-center'>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                </div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>React Development</h5>
+                <p className='card-text text-center'>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <div className='card text-bg-dark bg-opacity-25 mb-3'>
+          </div>
+          <div className='col-12 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a target='_blank' href='https://www.altcademy.com/@nathanpeters8/certificate/rubyium' rel='noreferrer'>
                 <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[4]})` }}></div>
-                <div className='card-body d-flex flex-column align-items-center'>
-                  <h5 className='card-title text-center'>Ruby Programming</h5>
-                  <p className='card-text text-center'>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                </div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>Ruby Programming</h5>
+                <p className='card-text text-center'>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <div className='card text-bg-dark bg-opacity-25 mb-3'>
+          </div>
+          <div className='col-12 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a target='_blank' href='https://www.altcademy.com/@nathanpeters8/certificate/railsium' rel='noreferrer'>
                 <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[5]})` }}></div>
-                <div className='card-body d-flex flex-column align-items-center'>
-                  <h5 className='card-title text-center'>Ruby on Rails Back-End</h5>
-                  <p className='card-text text-center'>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                </div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>Ruby on Rails Back-End</h5>
+                <p className='card-text text-center'>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
           </div>
