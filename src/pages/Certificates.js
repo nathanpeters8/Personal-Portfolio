@@ -42,7 +42,7 @@ const Certificates = () => {
               <div className='card-body d-flex flex-column align-items-center'>
                 <h5 className='card-title text-center'>HTML/CSS Development</h5>
                 <p className='card-text text-center'>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Learned basic and advanced concepts of HTML, CSS and Bootstrap to create responsive web pages.
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Certificates = () => {
               <div className='card-body d-flex flex-column align-items-center'>
                 <h5 className='card-title text-center'>JavaScript Programming</h5>
                 <p className='card-text text-center'>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Learned basic and advanced OOP concepts with JavaScript ES5 and ES6.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Certificates = () => {
               <div className='card-body d-flex flex-column align-items-center'>
                 <h5 className='card-title text-center'>Dynamic Website Development</h5>
                 <p className='card-text text-center'>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Learned how to use JavaScript and jQuery to manipulate the DOM and create dynamic web pages. Also learned how to use AJAX to make API requests.
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Certificates = () => {
               <div className='card-body d-flex flex-column align-items-center'>
                 <h5 className='card-title text-center'>React Development</h5>
                 <p className='card-text text-center'>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Learned how to create web applications with React.js, including state management, routing, and API requests with Fetch. 
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Certificates = () => {
               <div className='card-body d-flex flex-column align-items-center'>
                 <h5 className='card-title text-center'>Ruby Programming</h5>
                 <p className='card-text text-center'>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Learned basic and advanced concepts of object-oriented programming using Ruby.
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ const Certificates = () => {
               <div className='card-body d-flex flex-column align-items-center'>
                 <h5 className='card-title text-center'>Ruby on Rails Back-End</h5>
                 <p className='card-text text-center'>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Learned how to create back-end web server application with Ruby on Rails, including the MVC structure, database management with ActiveRecord, photo upload with AWS S3. 
                 </p>
               </div>
             </div>
