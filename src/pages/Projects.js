@@ -13,7 +13,28 @@ const Projects = () => {
 
   const location = useLocation();
 
-
+  const fullStackProjects = {
+    0: {
+      title: 'Airbnb Clone App',
+      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap' ],
+      image: require('../images/FullStack/full-stack-airbnb-clone.png'),
+      urls: {
+        page: 'https://nate-full-stack-airbnb-clone-7fa822d22cd0.herokuapp.com/',
+        github: 'https://github.com/nathanpeters8/full-stack-airbnb-clone',
+      },
+      description: 'A full-stack clone of Airbnb.com, using React.js for front-end and Ruby on Rails for the back-end.',
+    },
+    1: {
+      title: 'Twitter Clone App',
+      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap' ],
+      image: require('../images/FullStack/full-stack-twitter-clone.png'),
+      urls: {
+        page: 'https://nate-full-stack-twitter-clone-df50f9276374.herokuapp.com',
+        github: 'https://github.com/nathanpeters8/full-stack-twitter-clone',
+      },
+      description: 'A full-stack Twitter clone website using React.js for the front end and Ruby on Rails for the back end. Users can sign up, log in, post, and delete tweets, view profiles, and search tweets by keywords. Additionally, uploaded images are securely stored using AWS S3, while the rest of the data is being stored in a PostgreSQL database through Heroku.',
+    },
+  };
   const reactProjects = {
     0: {
       title: 'Currency Exchange Rate App',
@@ -277,73 +298,88 @@ const Projects = () => {
         </div>
         <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Projects</h2>
         <hr className='mb-5 pb-4' />
-        <div className='project-row-btns btn-group d-flex justify-content-center gap-2 mb-5'>
+        <div className='project-row-btns btn-group d-flex justify-content-center gap-2 mb-5 flex-wrap'>
+          <Link
+            to='fullstack'
+            className={
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 0 ? 'active' : '')
+            }
+            onClick={() => handlePageChange(0)}
+          >
+            Full Stack
+          </Link>
           <Link
             to='react'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 0 ? 'active' : '')
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 1 ? 'active' : '')
             }
-            onClick={() => handlePageChange(0)}
+            onClick={() => handlePageChange(1)}
           >
             React.js
           </Link>
           <Link
             to='rubyonrails'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 1 ? 'active' : '')
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
             }
-            onClick={() => handlePageChange(1)}
+            onClick={() => handlePageChange(2)}
           >
-            Rails
+            Ruby on Rails
           </Link>
           <Link
             to='webdev'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
-            }
-            onClick={() => handlePageChange(2)}
-          >
-            HTML/CSS
-          </Link>
-          <Link
-            to='javascript'
-            className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
             }
             onClick={() => handlePageChange(3)}
           >
-            JavaScript
+            HTML/CSS/jQuery
           </Link>
+          {/* <Link
+            to='javascript'
+            className={
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
+            }
+            onClick={() => handlePageChange(4)}
+          >
+            JavaScript
+          </Link> */}
           <Link
             to='gamedev'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 5 ? 'active' : '')
             }
-            onClick={() => handlePageChange(4)}
+            onClick={() => handlePageChange(5)}
           >
             Game Dev
           </Link>
           <Link
             to='datascience'
             className={
-              'btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 5 ? 'active' : '')
+              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 6 ? 'active' : '')
             }
-            onClick={() => handlePageChange(5)}
+            onClick={() => handlePageChange(6)}
           >
             Data Science
           </Link>
         </div>
         <Routes location={location}>
           <Route
+            path='fullstack'
+            element={
+              <ProjectsRowTemplate projects={fullStackProjects} title='Full-Stack Web Development' direction={direction} />
+            }
+          />
+          <Route
             path='react'
             element={
-              <ProjectsRowTemplate projects={reactProjects} title='React.js Development' direction={direction} />
+              <ProjectsRowTemplate projects={reactProjects} title='Front-End Development w/ React.js' direction={direction} />
             }
           />
           <Route
             path='rubyonrails'
             element={
-              <ProjectsRowTemplate projects={rubyOnRailsProjects} title='Ruby On Rails' direction={direction} />
+              <ProjectsRowTemplate projects={rubyOnRailsProjects} title='Back-End Development w/ Ruby on Rails' direction={direction} />
             }
           />
           <Route
@@ -370,7 +406,7 @@ const Projects = () => {
               />
             }
           />
-          <Route path='' element={<Navigate to='/projects/react' />} />
+          <Route path='' element={<Navigate to='/projects/fullstack' />} />
         </Routes>
         <footer>
           <a href='https://www.altcademy.com/' className='text-white d-flex pb-2 text-decoration-none'>
