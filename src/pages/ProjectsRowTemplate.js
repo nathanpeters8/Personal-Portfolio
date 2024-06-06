@@ -45,7 +45,7 @@ const ProjectsRowTemplate = (props) => {
           x: { type: 'spring', stiffness: 300},
         }}
       >
-        <div className={'row ' + (Object.keys(props.projects).length < 3 ? 'justify-content-lg-around ' : 'overflow-scroll ') + 'overflow-hidden flex-nowrap mt-4 mb-5 flex-row'}>
+        <div className={'row ' + (Object.keys(props.projects).length < 3 ? 'justify-content-lg-around ' :  '') + 'overflow-scroll overflow-hidden flex-nowrap mt-4 mb-5 flex-row'}>
           {(() => {
             return Object.keys(props.projects).map((proj, i) => {
               return (

@@ -5,12 +5,12 @@ const Heading = () => {
     <>
       <div className='container-xxl mt-3'>
         <div className='row pb-2'>
-          <div className='col-12 d-flex flex-column align-items-md-center flex-wrap'>
-            <div className='heading pb-2'>
+          <div className='col-12 d-flex flex-column align-items-center flex-wrap'>
+            <div className='heading pt-5'>
               <h1 className='display-4'>Nathan Peters</h1>
             </div>
           </div>
-          <div className='col-12 ps-0 mt-4 d-flex flex-column flex-sm-row flex-nowrap justify-content-start justify-content-md-center'>
+          <div className='col-12 ps-0 mt-4 d-flex flex-row flex-nowrap justify-content-center'>
             <div className='site-links h3'>
               <a
                 title='LinkedIn'

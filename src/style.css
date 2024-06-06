@@ -228,6 +228,21 @@ body {
   transition: opacity 1s ease;
 }
 
+/* .project-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 675px) {
+  .project-link {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 583px) {
+  .project-link {
+    font-size: 10px !important;
+  }
+} */
+
 .project-container:hover .project-buttons {
   opacity: 1 !important;
 }

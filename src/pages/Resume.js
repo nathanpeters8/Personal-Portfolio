@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Resume = () => {
   return (
     <>
@@ -6,7 +5,7 @@ const Resume = () => {
         <div className='row'>
           <div className='col-12 mt-5'>
             <div className='about-heading'>
-              <h2 className='fw-bold fs-2 d-flex justify-content-md-center'>About Me</h2>
+              <h2 className='fw-bold fs-2 d-flex justify-content-center'>About Me</h2>
               <hr />
               <p className='text-center'>
                 As an enthusiastic and aspiring Full Stack Web Developer with a solid foundation in Information Science,
@@ -22,7 +21,7 @@ const Resume = () => {
         <div className='row'>
           <div className='col-12 '>
             <div className='py-5' id='skills'>
-              <h2 className='fw-bold fs-2 d-flex justify-content-md-center'>Skills</h2>
+              <h2 className='fw-bold fs-2 d-flex justify-content-center'>Skills</h2>
               <hr />
               <div className='row'>
                 <div className='col-6 col-md-3 d-flex flex-column'>
@@ -58,13 +57,13 @@ const Resume = () => {
                       CSS <small>(2 years)</small>
                     </li>
                     <li>
-                      Bootstrap <small>({'<'} 1 year)</small>
+                      ReactJS <small>(1 year)</small>
+                    </li>
+                    <li>
+                      Bootstrap <small>(1 year)</small>
                     </li>
                     <li>
                       jQuery <small>({'<'} 1 year)</small>
-                    </li>
-                    <li>
-                      ReactJS <small>({'<'} 1 year)</small>
                     </li>
                     <li>
                       Ruby On Rails <small>({'<'} 1 year)</small>
@@ -113,12 +112,12 @@ const Resume = () => {
           </div>
           <div className='col-12 col-md-6 mt-4 mt-sm-3'>
             <div className='education'>
-              <h2 className='fw-bold fs-2 d-flex justify-content-md-center'>Education</h2>
+              <h2 className='fw-bold fs-2 d-flex justify-content-center'>Education</h2>
               <hr className='mb-4' />
               <div className='mb-5 pt-3'>
                 <h4 className='text-decoration-underline'>Full Stack Web Developer Certificate</h4>
                 <h5 className='fst-italic pt-2'>
-                  <a target='_blank' href='https://www.altcademy.com/' className='text-white text-decoration-none'>
+                  <a target='_blank' href='https://www.altcademy.com/' className='text-white text-decoration-none' rel='noreferrer'>
                     Altcademy
                   </a>
                 </h5>
@@ -136,7 +135,7 @@ const Resume = () => {
               <div className='mb-5 pt-3'>
                 <h4 className='text-decoration-underline'>B.S. Information Science and Technology</h4>
                 <h5 className='fst-italic pt-2'>
-                  <a target='_blank' href='https://www.arizona.edu/' className='text-white text-decoration-none'>
+                  <a target='_blank' href='https://www.arizona.edu/' className='text-white text-decoration-none' rel='noreferrer'>
                     University of Arizona
                   </a>
                 </h5>
@@ -153,12 +152,12 @@ const Resume = () => {
           </div>
           <div className='col-12 col-md-6 mt-4 mt-sm-3'>
             <div className='experience'>
-              <h2 className='fw-bold fs-2 d-flex justify-content-md-center'>Experience</h2>
+              <h2 className='fw-bold fs-2 d-flex justify-content-center'>Experience</h2>
               <hr className='mb-4' />
               <div className='mb-5 pt-3'>
                 <h4 className='text-decoration-underline'>Programming Instructor</h4>
                 <h5 className='fst-italic pt-2'>
-                  <a target='_blank' href='https://my.codakid.com/' className='text-white text-decoration-none'>
+                  <a target='_blank' href='https://my.codakid.com/' className='text-white text-decoration-none' rel='noreferrer'>
                     CodaKid
                   </a>
                 </h5>
