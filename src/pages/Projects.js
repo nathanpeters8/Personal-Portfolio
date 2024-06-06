@@ -16,23 +16,25 @@ const Projects = () => {
   const fullStackProjects = {
     0: {
       title: 'Airbnb Clone App',
-      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap' ],
+      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap'],
       image: require('../images/FullStack/full-stack-airbnb-clone.png'),
       urls: {
         page: 'https://nate-full-stack-airbnb-clone-7fa822d22cd0.herokuapp.com/',
         github: 'https://github.com/nathanpeters8/full-stack-airbnb-clone',
       },
-      description: 'A full-stack clone of Airbnb.com, using React.js for front-end and Ruby on Rails for the back-end.',
+      description:
+        'A full-stack Airbnb clone using React.js for a dynamic front-end and Ruby on Rails for a robust back-end. It features secure user authentication, allowing users to sign up and log in, browse and manage property listings, and book properties using the react-dates component. The application also integrates Stripe for handling simulated payments and provides dashboards for viewing booked properties and tracking bookings. ',
     },
     1: {
       title: 'Twitter Clone App',
-      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap' ],
+      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap'],
       image: require('../images/FullStack/full-stack-twitter-clone.png'),
       urls: {
         page: 'https://nate-full-stack-twitter-clone-df50f9276374.herokuapp.com',
         github: 'https://github.com/nathanpeters8/full-stack-twitter-clone',
       },
-      description: 'A full-stack Twitter clone website using React.js for the front end and Ruby on Rails for the back end. Users can sign up, log in, post, and delete tweets, view profiles, and search tweets by keywords. Additionally, uploaded images are securely stored using AWS S3, while the rest of the data is being stored in a PostgreSQL database through Heroku.',
+      description:
+        'A full-stack Twitter clone website using React.js for the front end and Ruby on Rails for the back end. Users can sign up, log in, post, and delete tweets, view profiles, and search tweets by keywords. Additionally, uploaded images are securely stored using AWS S3, while the rest of the data is being stored in a PostgreSQL database through Heroku.',
     },
   };
   const reactProjects = {
