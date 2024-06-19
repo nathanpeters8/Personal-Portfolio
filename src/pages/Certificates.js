@@ -11,6 +11,7 @@ const Certificates = () => {
     require('../images/Certifications/React.png'),
     require('../images/Certifications/Ruby.png'),
     require('../images/Certifications/Ruby_On_Rails.png'),
+    require('../images/Certifications/Full_Stack.png'),
   ];
 
   return (
@@ -30,6 +31,20 @@ const Certificates = () => {
         <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Certificates</h2>
         <hr className='mb-5 pb-4' />
         <div className='row justify-content-center'>
+          <div className='col-8 col-md-6 col-lg-4'>
+            <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
+              <a target='_blank' href='https://www.altcademy.com/@nathanpeters8/certificate/fullstack' rel='noreferrer'>
+                <div className='aspectRatioBox mb-3 px-0' style={{ backgroundImage: `url(${certImages[6]})` }}></div>
+              </a>
+              <div className='card-body d-flex flex-column align-items-center'>
+                <h5 className='card-title text-center'>Full Stack Web Development</h5>
+                <p className='card-text text-center'>
+                  Learned how to create full-stack web applications with Ruby on Rails as the back-end and React.js as
+                  the front-end. Also learned about using webhooks, webpacker, and redis servers.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className='col-8 col-md-6 col-lg-4'>
             <div className='card cert-container text-bg-dark bg-opacity-25 mb-3'>
               <a target='_blank' href='https://www.altcademy.com/@nathanpeters8/certificate/railsium' rel='noreferrer'>

@@ -36,6 +36,16 @@ const Projects = () => {
       description:
         'A full-stack Twitter clone website using React.js for the front end and Ruby on Rails for the back end. Users can sign up, log in, post, and delete tweets, view profiles, and search tweets by keywords. Additionally, uploaded images are securely stored using AWS S3, while the rest of the data is being stored in a PostgreSQL database through Heroku.',
     },
+    2: {
+      title: 'Live Chat App',
+      softwares: ['Ruby on Rails', 'ActionCable', 'Redis'],
+      image: require('../images/FullStack/chatroom.png'),
+      urls: {
+        page: 'https://nate-full-stack-chatroom-47e87235c593.herokuapp.com/',
+        github: 'https://github.com/nathanpeters8/full-stack-chatroom',
+      },
+      description: 'Created a simple live chat application using Ruby on Rails, where I learned how to use ActionCable to integrate WebSocket into a Rails app, and also use Redis as the server for ActionCable and back-end for the live communication between browsers and the server.'
+    },
   };
   const reactProjects = {
     0: {
@@ -319,7 +329,7 @@ const Projects = () => {
           >
             React.js
           </Link>
-          <Link
+          {/* <Link
             to='rubyonrails'
             className={
               'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
@@ -327,7 +337,7 @@ const Projects = () => {
             onClick={() => handlePageChange(2)}
           >
             Ruby on Rails
-          </Link>
+          </Link> */}
           <Link
             to='webdev'
             className={
