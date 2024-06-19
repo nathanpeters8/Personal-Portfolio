@@ -115,21 +115,17 @@ const Resume = () => {
               <h2 className='fw-bold fs-2 d-flex justify-content-center'>Education</h2>
               <hr className='mb-4' />
               <div className='mb-5 pt-3'>
-                <h4 className='text-decoration-underline'>Full Stack Web Developer Certificate</h4>
+                <h4 className='text-decoration-underline'>Full Stack Web Developer Certification</h4>
                 <h5 className='fst-italic pt-2'>
                   <a target='_blank' href='https://www.altcademy.com/' className='text-white text-decoration-none' rel='noreferrer'>
                     Altcademy
                   </a>
                 </h5>
-                <h6>
-                  <small className='fw-light fst-italic'>(Apr 2023 - Present)</small>
-                </h6>
                 <p className='lh-sm pt-2'>
                   Currently enrolled in Altcademy's full stack web development certificate program. So far I have
                   learned about building responsive websites using HTML, CSS, & Bootstrap, building dynamic websites
-                  with JavaScript & jQuery, connecting to an API using Ajax, building web applications using React.jsand
-                  finally learning back-end web development with Ruby on Rails. Soon I will learn about deploying a
-                  full-stack application with Heroku, learning Typescript.
+                  with JavaScript & jQuery, connecting to an API using Ajax, building web applications using React.js
+                  learning back-end web development with Ruby on Rails, and finally learning full-stack web development by combining both React and Ruby on Rails. Next I will create a capstone project and then learn about Typescript.
                 </p>
               </div>
               <div className='mb-5 pt-3'>
@@ -139,9 +135,6 @@ const Resume = () => {
                     University of Arizona
                   </a>
                 </h5>
-                <h6>
-                  <small className='fw-light fst-italic'>(Aug 2016 - Aug 2020)</small>
-                </h6>
                 <p className='lh-sm pt-2'>
                   Completed a Bachelor of Science degree in Information Science, with a minor in Geographic Information
                   Science. My main areas of focus were learning data science with Python, game development with Unity,
