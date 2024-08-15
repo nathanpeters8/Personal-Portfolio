@@ -82,6 +82,21 @@ body {
   background-color: rgba(69, 73, 78, 0.75);
 }
 
+.custom-toggler-icon {
+  background-image: none; /* Remove the default background image */
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+
+.custom-toggler-icon::before {
+  content: '\2630';
+  color: white;
+  font-size: 2rem;
+}
+
 /* Heading */
 @media (min-width: 768px) {
   .heading {

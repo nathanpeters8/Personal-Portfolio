@@ -10,8 +10,8 @@ const Heading = () => {
               <h1 className='display-4'>Nathan Peters</h1>
             </div>
           </div>
-          <div className='col-12 ps-0 mt-4 d-flex flex-row flex-nowrap justify-content-center'>
-            <div className='site-links h3'>
+          <div className='col-12 mt-4'>
+            <div className='site-links h2 d-flex flex-row flex-nowrap justify-content-center gap-2'>
               <a
                 title='LinkedIn'
                 target='_blank'
@@ -39,7 +39,7 @@ const Heading = () => {
               >
                 <FontAwesomeIcon icon='fa-solid fa-laptop-code fa-xl' className='icon'></FontAwesomeIcon>
               </a>
-              <a
+              {/* <a
                 title='HackerRank'
                 target='_blank'
                 rel='noreferrer'
@@ -47,12 +47,11 @@ const Heading = () => {
                 className='text-light px-3 py-1'
               >
                 <FontAwesomeIcon icon='fab fa-hackerrank fa-xl' className='icon'></FontAwesomeIcon>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };
