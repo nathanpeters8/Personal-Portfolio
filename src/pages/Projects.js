@@ -1,6 +1,5 @@
-
 import { Link, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import ProjectsRowTemplate from './ProjectsRowTemplate';
@@ -15,6 +14,17 @@ const Projects = () => {
 
   const fullStackProjects = {
     0: {
+      title: 'Brewery Scout - Brewery Review App',
+      softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap'],
+      image: require('../images/FullStack/brewery-scout.png'),
+      urls: {
+        page: 'https://www.breweryscout.us/',
+        github: 'https://github.com/nathanpeters8/brewery-review-app',
+      },
+      description:
+        'A full stack web application that helps users discover and explore breweries across America. With Brewery Scout, users can search for breweries, write and read reviews, upload and view images, and even find brewery locations on an interactive map. The application uses React.js for the front end, Ruby on Rails for the back end, and AWS S3 for image storage. ',
+    },
+    1: {
       title: 'Airbnb Clone App',
       softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap'],
       image: require('../images/FullStack/full-stack-airbnb-clone.png'),
@@ -25,7 +35,7 @@ const Projects = () => {
       description:
         'A full-stack Airbnb clone using React.js for a dynamic front-end and Ruby on Rails for a robust back-end. It features secure user authentication, allowing users to sign up and log in, browse and manage property listings, and book properties using the react-dates component. The application also integrates Stripe for handling simulated payments and provides dashboards for viewing booked properties and tracking bookings. ',
     },
-    1: {
+    2: {
       title: 'Twitter Clone App',
       softwares: ['React', 'Ruby on Rails', 'JavaScript', 'AWS S3', 'Bootstrap'],
       image: require('../images/FullStack/full-stack-twitter-clone.png'),
@@ -36,7 +46,7 @@ const Projects = () => {
       description:
         'A full-stack Twitter clone website using React.js for the front end and Ruby on Rails for the back end. Users can sign up, log in, post, and delete tweets, view profiles, and search tweets by keywords. Additionally, uploaded images are securely stored using AWS S3, while the rest of the data is being stored in a PostgreSQL database through Heroku.',
     },
-    2: {
+    3: {
       title: 'Live Chat App',
       softwares: ['Ruby on Rails', 'ActionCable', 'Redis'],
       image: require('../images/FullStack/chatroom.png'),
@@ -44,7 +54,8 @@ const Projects = () => {
         page: 'https://nate-full-stack-chatroom-47e87235c593.herokuapp.com/',
         github: 'https://github.com/nathanpeters8/full-stack-chatroom',
       },
-      description: 'Created a simple live chat application using Ruby on Rails, where I learned how to use ActionCable to integrate WebSocket into a Rails app, and also use Redis as the server for ActionCable and back-end for the live communication between browsers and the server.'
+      description:
+        'Created a simple live chat application using Ruby on Rails, where I learned how to use ActionCable to integrate WebSocket into a Rails app, and also use Redis as the server for ActionCable and back-end for the live communication between browsers and the server.',
     },
   };
   const reactProjects = {
@@ -182,7 +193,8 @@ const Projects = () => {
       urls: {
         page: 'https://replit.com/@nathanpeters8/Black-Jack',
       },
-      description: "This application simulates the casino game Blackjack. Play either one round by yourself without a dealer, or bet \"money\" and play against a dealer until you run out of money.",
+      description:
+        'This application simulates the casino game Blackjack. Play either one round by yourself without a dealer, or bet "money" and play against a dealer until you run out of money.',
     },
     1: {
       title: 'Rock Paper Scissors',
@@ -274,33 +286,42 @@ const Projects = () => {
   };
 
   const pageVariants = {
-    visible: {opacity: 1, transition: {duration: 0.75}},
-    hidden: {opacity: 0, transition: {duration: 0.75}},
-  }
+    visible: { opacity: 1, transition: { duration: 0.75 } },
+    hidden: { opacity: 0, transition: { duration: 0.75 } },
+  };
 
-  const handlePageChange = (newPage) => {
-    // moving right
-    if(newPage > page) {
-      console.log('right');
-      setDirection(1);
-    }
-    //moving left
-    else if(newPage < page) {
-      console.log('left');
-      setDirection(-1);
-    }
+  const handlePageChange = (e, newPage) => {
+    setDirection(newPage > page ? 1 : -1);
     setPage(newPage);
   };
+
+  useEffect(() => {
+    if (location.pathname === '/projects/fullstack') {
+      setPage(0);
+    } else if (location.pathname === '/projects/react') {
+      setPage(1);
+    } else if (location.pathname === '/projects/rubyonrails') {
+      setPage(2);
+    } else if (location.pathname === '/projects/webdev') {
+      setPage(3);
+    } else if (location.pathname === '/projects/javascript') {
+      setPage(4);
+    } else if (location.pathname === '/projects/gamedev') {
+      setPage(5);
+    } else if (location.pathname === '/projects/datascience') {
+      setPage(6);
+    }
+  }, [location.pathname]);
 
   return (
     <>
       <motion.div
-        className='projects-background container-xxl rounded-3'
-        id='projects'
         variants={pageVariants}
         initial='hidden'
         animate='visible'
         exit='hidden'
+        className='projects-background container-xxl rounded-3'
+        id='projects'
       >
         <div className='sm-background-image rounded-3'>
           <div className='sm-background-color'>
@@ -309,89 +330,107 @@ const Projects = () => {
           </div>
         </div>
         <h2 className='text-light fs-2 fw-bold d-flex justify-content-md-center mt-5'>Projects</h2>
-        <hr className='mb-5 pb-4' />
-        <div className='project-row-btns btn-group d-flex justify-content-center gap-2 mb-5 flex-wrap'>
+        <hr className='mb-5' />
+        <div className='project-row-btns btn-group d-flex justify-content-center gap-2 mb-5'>
           <Link
             to='fullstack'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 0 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' +
+              (page === 0 ? 'active' : '')
             }
-            onClick={() => handlePageChange(0)}
+            onClick={(e) => handlePageChange(e, 0)}
           >
             Full Stack
           </Link>
           <Link
             to='react'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 1 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' +
+              (page === 1 ? 'active' : '')
             }
-            onClick={() => handlePageChange(1)}
+            onClick={(e) => handlePageChange(e, 1)}
           >
             React.js
           </Link>
           {/* <Link
             to='rubyonrails'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 2 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' + (page === 2 ? 'active' : '')
             }
-            onClick={() => handlePageChange(2)}
+            onClick={(e) => handlePageChange(e, 2)}
           >
             Ruby on Rails
           </Link> */}
           <Link
             to='webdev'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 3 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' +
+              (page === 3 ? 'active' : '')
             }
-            onClick={() => handlePageChange(3)}
+            onClick={(e) => handlePageChange(e, 3)}
           >
             HTML/CSS/jQuery
           </Link>
           {/* <Link
             to='javascript'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 4 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' + (page === 4 ? 'active' : '')
             }
-            onClick={() => handlePageChange(4)}
+            onClick={(e) => handlePageChange(e, 4)}
           >
             JavaScript
           </Link> */}
           <Link
             to='gamedev'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 5 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' +
+              (page === 5 ? 'active' : '')
             }
-            onClick={() => handlePageChange(5)}
+            onClick={(e) => handlePageChange(e, 5)}
           >
             Game Dev
           </Link>
           <Link
             to='datascience'
             className={
-              'project-link btn btn-sm text-center overflow-hidden btn-outline-light rounded ' + (page === 6 ? 'active' : '')
+              'project-link btn btn-sm btn-outline-light rounded d-flex align-items-center justify-content-center ' +
+              (page === 6 ? 'active' : '')
             }
-            onClick={() => handlePageChange(6)}
+            onClick={(e) => handlePageChange(e, 6)}
           >
             Data Science
           </Link>
         </div>
+        <hr className='mb-5' />
         <Routes location={location}>
           <Route
             path='fullstack'
             element={
-              <ProjectsRowTemplate projects={fullStackProjects} title='Full-Stack Web Development' direction={direction} />
+              <ProjectsRowTemplate
+                projects={fullStackProjects}
+                title='Full-Stack Web Development'
+                direction={direction}
+              />
             }
           />
           <Route
             path='react'
             element={
-              <ProjectsRowTemplate projects={reactProjects} title='Front-End Development w/ React.js' direction={direction} />
+              <ProjectsRowTemplate
+                projects={reactProjects}
+                title='Front-End Development w/ React.js'
+                direction={direction}
+              />
             }
           />
           <Route
             path='rubyonrails'
             element={
-              <ProjectsRowTemplate projects={rubyOnRailsProjects} title='Back-End Development w/ Ruby on Rails' direction={direction} />
+              <ProjectsRowTemplate
+                projects={rubyOnRailsProjects}
+                title='Back-End Development w/ Ruby on Rails'
+                direction={direction}
+              />
             }
           />
           <Route
